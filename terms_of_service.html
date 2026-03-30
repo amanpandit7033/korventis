@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Terms of Service | Korventis</title>
+    <meta name="description"
+        content="Korventis Terms of Service — the legal framework governing the use of our platform, intellectual property, user conduct, and liability." />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "tertiary-container": "#122236",
+                        "on-secondary": "#ffffff",
+                        "inverse-on-surface": "#eff1f3",
+                        "surface-tint": "#465f88",
+                        "on-secondary-container": "#fefcff",
+                        "on-primary-fixed": "#001b3d",
+                        "surface-dim": "#d8dadc",
+                        "on-secondary-fixed-variant": "#0040a1",
+                        "tertiary-fixed-dim": "#b7c8e1",
+                        "surface-container-high": "#e6e8ea",
+                        "surface-bright": "#f7f9fb",
+                        "error-container": "#ffdad6",
+                        "secondary-container": "#316ee9",
+                        "surface-container": "#eceef0",
+                        "on-error-container": "#93000a",
+                        "surface-container-highest": "#e0e3e5",
+                        "outline-variant": "#c4c6cf",
+                        "on-tertiary-fixed-variant": "#38485d",
+                        "surface-container-low": "#f2f4f6",
+                        "secondary-fixed-dim": "#b2c5ff",
+                        "on-secondary-fixed": "#001847",
+                        "outline": "#74777f",
+                        "on-primary-fixed-variant": "#2d476f",
+                        "tertiary-fixed": "#d3e4fe",
+                        "on-error": "#ffffff",
+                        "primary-fixed": "#d6e3ff",
+                        "on-tertiary": "#ffffff",
+                        "on-surface-variant": "#44474e",
+                        "on-tertiary-container": "#7a8aa2",
+                        "on-primary-container": "#708ab5",
+                        "on-background": "#191c1e",
+                        "surface-container-lowest": "#ffffff",
+                        "error": "#ba1a1a",
+                        "tertiary": "#000b1b",
+                        "primary-fixed-dim": "#aec7f6",
+                        "background": "#f7f9fb",
+                        "on-primary": "#ffffff",
+                        "surface": "#f7f9fb",
+                        "primary-container": "#002147",
+                        "on-surface": "#191c1e",
+                        "inverse-surface": "#2d3133",
+                        "surface-variant": "#e0e3e5",
+                        "secondary": "#0054cd",
+                        "inverse-primary": "#aec7f6",
+                        "on-tertiary-fixed": "#0b1c30",
+                        "secondary-fixed": "#dae2ff",
+                        "primary": "#000a1e"
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-background text-on-surface selection:bg-secondary/20">
+    <!-- TopNavBar -->
+    <nav
+        class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-[0_24px_48px_-12px_rgba(0,33,71,0.08)]">
+        <div class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20">
+            <a href="index.html"
+                class="text-2xl font-extrabold text-[#002147] dark:text-white tracking-tighter font-headline">Korventis</a>
+            <div class="hidden md:flex items-center gap-10">
+                <a class="text-slate-600 dark:text-slate-400 hover:text-[#0054cd] transition-colors duration-300 font-headline font-bold tracking-tight"
+                    href="index.html">Home</a>
+                <a class="text-slate-600 dark:text-slate-400 hover:text-[#0054cd] transition-colors duration-300 font-headline font-bold tracking-tight"
+                    href="about.html">About</a>
+                <a class="text-slate-600 dark:text-slate-400 hover:text-[#0054cd] transition-colors duration-300 font-headline font-bold tracking-tight"
+                    href="services.html">Services</a>
+                <a class="text-slate-600 dark:text-slate-400 hover:text-[#0054cd] transition-colors duration-300 font-headline font-bold tracking-tight"
+                    href="portfolio.html">Portfolio</a>
+                <a class="text-slate-600 dark:text-slate-400 hover:text-[#0054cd] transition-colors duration-300 font-headline font-bold tracking-tight"
+                    href="blog.html">Blog</a>
+                <a class="text-slate-600 dark:text-slate-400 hover:text-[#0054cd] transition-colors duration-300 font-headline font-bold tracking-tight"
+                    href="contact.html">Contact</a>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden flex items-center text-[#002147] dark:text-white">
+                <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+            <a href="contact.html"
+                class="hidden md:inline-block bg-gradient-to-br from-secondary to-secondary-container text-white px-6 py-2.5 rounded-lg font-bold text-sm scale-95 active:opacity-80 transition-transform shadow-lg">Get
+                a Quote</a>
+        </div>
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-white/95 dark:bg-slate-950/95 backdrop-blur-xl border-t border-outline-variant/10">
+            <div class="flex flex-col px-8 py-6 gap-4">
+                <a class="text-slate-600 dark:text-slate-400 font-headline font-bold tracking-tight"
+                    href="index.html">Home</a>
+                <a class="text-slate-600 dark:text-slate-400 font-headline font-bold tracking-tight"
+                    href="about.html">About</a>
+                <a class="text-slate-600 dark:text-slate-400 font-headline font-bold tracking-tight"
+                    href="services.html">Services</a>
+                <a class="text-slate-600 dark:text-slate-400 font-headline font-bold tracking-tight"
+                    href="portfolio.html">Portfolio</a>
+                <a class="text-slate-600 dark:text-slate-400 font-headline font-bold tracking-tight"
+                    href="blog.html">Blog</a>
+                <a class="text-slate-600 dark:text-slate-400 font-headline font-bold tracking-tight"
+                    href="contact.html">Contact</a>
+                <a href="contact.html"
+                    class="bg-gradient-to-br from-secondary to-secondary-container text-white px-6 py-2.5 rounded-lg font-bold text-sm text-center shadow-lg mt-2">Get
+                    a Quote</a>
+            </div>
+        </div>
+    </nav>
+    <main class="pt-32 pb-24">
+        <div class="max-w-7xl mx-auto px-8">
+            <!-- Header Section -->
+            <header class="mb-20">
+                <div class="flex flex-col gap-4">
+                    <span class="text-xs font-bold tracking-[0.2em] text-secondary uppercase font-label">Legal
+                        Framework</span>
+                    <h1 class="text-5xl md:text-7xl font-extrabold text-primary-container tracking-tighter max-w-4xl">
+                        Terms of <span class="text-secondary">Service.</span>
+                    </h1>
+                    <p class="text-on-surface-variant text-lg max-w-2xl leading-relaxed mt-4">
+                        Effective as of January 1, 2024. These terms govern the professional relationship and usage of
+                        the Korventis architectural authority platform and its digital ecosystems.
+                    </p>
+                </div>
+            </header>
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+                <!-- Navigation Anchor / Sidebar -->
+                <aside class="lg:col-span-3 hidden lg:block">
+                    <div class="sticky top-32 flex flex-col gap-6">
+                        <nav id="sidebar-nav" class="flex flex-col gap-4 border-l-2 border-surface-container">
+                            <a class="nav-link pl-6 py-1 text-secondary font-bold border-l-2 border-secondary -ml-[2px] transition-all"
+                                href="#acceptance">Acceptance of Terms</a>
+                            <a class="nav-link pl-6 py-1 text-on-surface-variant hover:text-primary border-l-2 border-transparent -ml-[2px] transition-all"
+                                href="#conduct">User Conduct</a>
+                            <a class="nav-link pl-6 py-1 text-on-surface-variant hover:text-primary border-l-2 border-transparent -ml-[2px] transition-all"
+                                href="#property">Intellectual Property</a>
+                            <a class="nav-link pl-6 py-1 text-on-surface-variant hover:text-primary border-l-2 border-transparent -ml-[2px] transition-all"
+                                href="#liability">Limitation of Liability</a>
+                        </nav>
+                        <div class="bg-surface-container-low p-6 rounded-xl mt-8">
+                            <p class="text-xs font-bold text-primary-container mb-2 font-label">Need Clarification?</p>
+                            <p class="text-sm text-on-surface-variant mb-4">Our legal team is available for any
+                                contractual inquiries.</p>
+                            <a class="text-secondary text-sm font-bold flex items-center gap-2" href="#">
+                                legal@korventis.com
+                                <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+                <!-- Content Area -->
+                <div class="lg:col-span-9 space-y-24">
+                    <!-- Section: Acceptance -->
+                    <section class="scroll-mt-32" id="acceptance">
+                        <div class="flex items-start gap-8">
+                            <div
+                                class="hidden md:flex h-12 w-12 items-center justify-center bg-primary-container text-white rounded-full flex-shrink-0 font-bold">
+                                01</div>
+                            <div class="space-y-6">
+                                <h2 class="text-3xl font-bold text-primary-container tracking-tight">Acceptance of Terms
+                                </h2>
+                                <div
+                                    class="bg-surface-container-lowest p-8 rounded-xl shadow-[0_24px_48px_-12px_rgba(0,33,71,0.08)]">
+                                    <p class="text-on-surface-variant leading-relaxed mb-4">
+                                        By accessing or using the Korventis platform, including all associated services,
+                                        websites, and technical architecture (collectively, the "Services"), you agree
+                                        to be bound by these Terms of Service and all applicable laws and regulations.
+                                    </p>
+                                    <p class="text-on-surface-variant leading-relaxed">
+                                        If you do not agree with any of these terms, you are prohibited from using or
+                                        accessing this site. The materials contained in this website are protected by
+                                        applicable copyright and trademark law. We reserve the right to update these
+                                        terms at any time without prior notice.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Section: User Conduct -->
+                    <section class="scroll-mt-32" id="conduct">
+                        <div class="flex items-start gap-8">
+                            <div
+                                class="hidden md:flex h-12 w-12 items-center justify-center bg-primary-container text-white rounded-full flex-shrink-0 font-bold">
+                                02</div>
+                            <div class="space-y-6 w-full">
+                                <h2 class="text-3xl font-bold text-primary-container tracking-tight">User Conduct</h2>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    <div class="bg-surface-container-low p-6 rounded-xl">
+                                        <span class="material-symbols-outlined text-secondary mb-4">security</span>
+                                        <h3 class="font-bold text-primary-container mb-2">Integrity</h3>
+                                        <p class="text-sm text-on-surface-variant">Users must provide accurate, current,
+                                            and complete information during the registration and usage process.</p>
+                                    </div>
+                                    <div class="bg-surface-container-low p-6 rounded-xl">
+                                        <span class="material-symbols-outlined text-secondary mb-4">block</span>
+                                        <h3 class="font-bold text-primary-container mb-2">Prohibitions</h3>
+                                        <p class="text-sm text-on-surface-variant">Any attempt to reverse engineer,
+                                            decompile, or bypass the security infrastructure is strictly forbidden.</p>
+                                    </div>
+                                </div>
+                                <div class="p-4 border-l-4 border-secondary bg-surface-container-low">
+                                    <p class="text-on-surface-variant italic leading-relaxed">
+                                        "Professionalism and mutual respect form the bedrock of the Korventis ecosystem.
+                                        Violation of conduct protocols may result in immediate revocation of access
+                                        rights."
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Section: Intellectual Property -->
+                    <section class="scroll-mt-32" id="property">
+                        <div class="flex items-start gap-8">
+                            <div
+                                class="hidden md:flex h-12 w-12 items-center justify-center bg-primary-container text-white rounded-full flex-shrink-0 font-bold">
+                                03</div>
+                            <div class="space-y-6">
+                                <h2 class="text-3xl font-bold text-primary-container tracking-tight">Intellectual
+                                    Property</h2>
+                                <div class="space-y-4">
+                                    <p class="text-on-surface-variant leading-relaxed">
+                                        All content included on the Service, such as text, graphics, logos, images, as
+                                        well as the compilation thereof, and any software used on the Service, is the
+                                        property of Korventis or its suppliers and protected by copyright and other laws
+                                        that protect intellectual property and proprietary rights.
+                                    </p>
+                                    <div class="relative h-64 w-full rounded-2xl overflow-hidden mt-8">
+                                        <img alt="abstract geometric representation of digital ownership and architecture"
+                                            class="w-full h-full object-cover"
+                                            data-alt="high-end minimalist architectural render of glass and steel structures with blue light accents"
+                                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCga1xA013Dpzzgqq3X9kJTTbdw6N0MH1lJa4NPGa7Amt5P_RbLxoDd5Gdt-AvMbV5sp65l-YhTp6nVFXXQv0L5pJYclHevx86XGyQY32ZPWuN6_Ul00fBdIiAlDHwBH2QEAdUtkmsEM-TlzzrG0Ugbvp323PgbC9wSDDvRxg1Q_pl7k7FgWA2aoMU0s7zKYpjU7mBdHwTdLQkN-aqJTWPlib2uorx2bL0N1fgXBc6Zv0Rm-Vt7ai7FKYk7bkowH0SIVsIdarOGDE" />
+                                        <div class="absolute inset-0 bg-primary-container/20"></div>
+                                    </div>
+                                    <p class="text-on-surface-variant leading-relaxed mt-4">
+                                        You are granted a non-exclusive, non-transferable, revocable license to access
+                                        and use the Service strictly in accordance with these terms of use. As a
+                                        condition of your use of the Site, you warrant to Korventis that you will not
+                                        use the Site for any purpose that is unlawful or prohibited by these Terms.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Section: Liability -->
+                    <section class="scroll-mt-32" id="liability">
+                        <div class="flex items-start gap-8">
+                            <div
+                                class="hidden md:flex h-12 w-12 items-center justify-center bg-primary-container text-white rounded-full flex-shrink-0 font-bold">
+                                04</div>
+                            <div class="space-y-6">
+                                <h2 class="text-3xl font-bold text-primary-container tracking-tight">Limitation of
+                                    Liability</h2>
+                                <div class="bg-primary-container p-10 rounded-2xl text-white">
+                                    <p class="font-manrope text-xl font-medium leading-relaxed opacity-90">
+                                        IN NO EVENT SHALL KORVENTIS, NOR ITS DIRECTORS, EMPLOYEES, PARTNERS, AGENTS,
+                                        SUPPLIERS, OR AFFILIATES, BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL,
+                                        CONSEQUENTIAL OR PUNITIVE DAMAGES, INCLUDING WITHOUT LIMITATION, LOSS OF
+                                        PROFITS, DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES.
+                                    </p>
+                                    <hr class="my-8 border-white/10" />
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm opacity-80">
+                                        <p>THE SERVICE IS PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS. KORVENTIS
+                                            MAKES NO REPRESENTATIONS OR WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED.</p>
+                                        <p>YOUR USE OF THE SERVICE IS AT YOUR SOLE RISK. WE DO NOT WARRANT THAT THE
+                                            SERVICE WILL FUNCTION UNINTERRUPTED OR SECURE AT ALL TIMES.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <!-- Bottom CTA -->
+            <div
+                class="mt-32 p-12 bg-surface-container-low rounded-3xl flex flex-col md:flex-row items-center justify-between gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold text-primary-container">Still have questions?</h3>
+                    <p class="text-on-surface-variant">Download our complete legal package for offline review.</p>
+                </div>
+                <div class="flex gap-4">
+                    <button
+                        class="px-6 py-3 border-2 border-outline-variant rounded-lg font-bold text-sm hover:bg-surface-container transition-colors">Download
+                        PDF</button>
+                    <button
+                        class="px-6 py-3 bg-secondary text-white rounded-lg font-bold text-sm hover:opacity-90 transition-opacity">Contact
+                        Legal</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-[#f2f4f6] dark:bg-slate-900 w-full pt-20 pb-10">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto px-8 font-body text-sm antialiased">
+            <div class="md:col-span-1">
+                <a href="index.html"
+                    class="text-xl font-bold text-[#002147] dark:text-white mb-6 block font-headline">Korventis</a>
+                <p class="text-slate-500 dark:text-slate-400 leading-relaxed">
+                    Premium technology solutions for businesses that refuse to settle for the status quo. Global reach,
+                    architectural precision.
+                </p>
+                <div class="mt-8 flex gap-4">
+                    <span
+                        class="material-symbols-outlined text-slate-400 hover:text-secondary cursor-pointer transition-colors">hub</span>
+                    <span
+                        class="material-symbols-outlined text-slate-400 hover:text-secondary cursor-pointer transition-colors">public</span>
+                    <span
+                        class="material-symbols-outlined text-slate-400 hover:text-secondary cursor-pointer transition-colors">terminal</span>
+                </div>
+            </div>
+            <div class="flex flex-col gap-4">
+                <h5 class="text-[#002147] dark:text-white font-bold mb-2 font-headline">Services</h5>
+                <a class="text-slate-500 dark:text-slate-400 hover:text-[#002147] dark:hover:text-white transition-opacity"
+                    href="services.html">Web Development</a>
+                <a class="text-slate-500 dark:text-slate-400 hover:text-[#002147] dark:hover:text-white transition-opacity"
+                    href="services.html">App Development</a>
+                <a class="text-slate-500 dark:text-slate-400 hover:text-[#002147] dark:hover:text-white transition-opacity"
+                    href="services.html">SaaS Solutions</a>
+                <a class="text-slate-500 dark:text-slate-400 hover:text-[#002147] dark:hover:text-white transition-opacity"
+                    href="services.html">SEO Strategy</a>
+            </div>
+            <div class="flex flex-col gap-4">
+                <h5 class="text-[#002147] dark:text-white font-bold mb-2 font-headline">Company</h5>
+                <a class="text-slate-500 dark:text-slate-400 hover:text-[#002147] dark:hover:text-white transition-opacity"
+                    href="about.html">About Us</a>
+                <a class="text-slate-500 dark:text-slate-400 hover:text-[#002147] dark:hover:text-white transition-opacity"
+                    href="portfolio.html">Portfolio</a>
+                <a class="text-slate-500 dark:text-slate-400 hover:text-[#002147] dark:hover:text-white transition-opacity"
+                    href="blog.html">Blog</a>
+                <a class="text-slate-500 dark:text-slate-400 hover:text-[#002147] dark:hover:text-white transition-opacity"
+                    href="contact.html">Contact</a>
+            </div>
+            <div class="flex flex-col gap-4">
+                <h5 class="text-[#002147] dark:text-white font-bold mb-2 font-headline">Get Started</h5>
+                <p class="text-slate-500 dark:text-slate-400 mb-2">Schedule a discovery call with our architectural
+                    leads.</p>
+                <a href="contact.html"
+                    class="bg-primary-container text-white px-6 py-3 rounded-lg font-bold text-sm shadow-md hover:bg-secondary transition-colors text-center">Get
+                    a Quote</a>
+            </div>
+        </div>
+        <div
+            class="max-w-7xl mx-auto px-8 mt-20 pt-10 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-slate-500 dark:text-slate-400">© 2025 Korventis. All rights reserved.</div>
+            <div class="flex flex-wrap gap-8">
+                <a class="text-slate-500 dark:text-slate-400 hover:text-[#002147] dark:hover:text-white underline-offset-4 hover:underline"
+                    href="privacy_policy.html">Privacy Policy</a>
+                <a class="text-slate-500 dark:text-slate-400 hover:text-[#002147] dark:hover:text-white underline-offset-4 hover:underline"
+                    href="terms_of_service.html">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', function () {
+            const menu = document.getElementById('mobile-menu');
+            const icon = this.querySelector('.material-symbols-outlined');
+            menu.classList.toggle('hidden');
+            icon.textContent = menu.classList.contains('hidden') ? 'menu' : 'close';
+        });
+
+        // Scroll-spy for sidebar navigation
+        const navLinks = document.querySelectorAll('#sidebar-nav .nav-link');
+        const sections = [];
+        navLinks.forEach(link => {
+            const id = link.getAttribute('href').substring(1);
+            const section = document.getElementById(id);
+            if (section) sections.push({ id, el: section, link });
+        });
+
+        function setActiveLink(activeLink) {
+            navLinks.forEach(link => {
+                link.classList.remove('text-secondary', 'font-bold', 'border-secondary');
+                link.classList.add('text-on-surface-variant', 'border-transparent');
+            });
+            activeLink.classList.remove('text-on-surface-variant', 'border-transparent');
+            activeLink.classList.add('text-secondary', 'font-bold', 'border-secondary');
+        }
+
+        window.addEventListener('scroll', function () {
+            let current = sections[0];
+            for (const section of sections) {
+                if (window.scrollY >= section.el.offsetTop - 150) {
+                    current = section;
+                }
+            }
+            if (current) setActiveLink(current.link);
+        });
+    </script>
+</body>
+
+</html>

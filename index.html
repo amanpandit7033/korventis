@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth light" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Korventis | Empowering Business Through Innovation</title>
+  <meta name="description"
+    content="Korventis architects bespoke digital ecosystems that drive growth, efficiency, and market leadership. Premium web, mobile, SaaS, and enterprise software solutions." />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-error-container": "#93000a",
+            "inverse-surface": "#2d3133",
+            "on-secondary-container": "#fefcff",
+            "tertiary-fixed-dim": "#b7c8e1",
+            "surface-tint": "#465f88",
+            "on-tertiary-fixed-variant": "#38485d",
+            "secondary": "#0054cd",
+            "outline-variant": "#c4c6cf",
+            "outline": "#74777f",
+            "tertiary-fixed": "#d3e4fe",
+            "error": "#ba1a1a",
+            "on-primary-fixed-variant": "#2d476f",
+            "on-secondary-fixed": "#001847",
+            "on-background": "#191c1e",
+            "surface-container": "#eceef0",
+            "inverse-primary": "#aec7f6",
+            "surface-container-lowest": "#ffffff",
+            "surface-variant": "#e0e3e5",
+            "primary": "#000a1e",
+            "tertiary-container": "#122236",
+            "on-primary": "#ffffff",
+            "secondary-fixed-dim": "#b2c5ff",
+            "on-primary-fixed": "#001b3d",
+            "on-primary-container": "#708ab5",
+            "error-container": "#ffdad6",
+            "on-surface": "#191c1e",
+            "surface-bright": "#f7f9fb",
+            "surface-container-highest": "#e0e3e5",
+            "inverse-on-surface": "#eff1f3",
+            "secondary-container": "#316ee9",
+            "primary-container": "#002147",
+            "surface": "#f7f9fb",
+            "on-tertiary-container": "#7a8aa2",
+            "surface-container-high": "#e6e8ea",
+            "primary-fixed-dim": "#aec7f6",
+            "on-tertiary-fixed": "#0b1c30",
+            "surface-dim": "#d8dadc",
+            "surface-container-low": "#f2f4f6",
+            "on-surface-variant": "#44474e",
+            "on-secondary": "#ffffff",
+            "tertiary": "#000b1b",
+            "on-error": "#ffffff",
+            "background": "#f7f9fb",
+            "primary-fixed": "#d6e3ff",
+            "on-tertiary": "#ffffff",
+            "secondary-fixed": "#dae2ff",
+            "on-secondary-fixed-variant": "#0040a1"
+          },
+          fontFamily: {
+            "headline": ["Manrope"],
+            "body": ["Inter"],
+            "label": ["Inter"]
+          },
+          borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+
+    .bg-action-gradient {
+      background: linear-gradient(135deg, #0054cd 0%, #316ee9 100%);
+    }
+  </style>
+</head>
+
+<body class="bg-background text-on-background font-body antialiased">
+  <!-- Top Navigation Shell -->
+  <nav
+    class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-[0_24px_48px_-12px_rgba(0,33,71,0.08)]">
+    <div class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20">
+      <a href="index.html"
+        class="text-2xl font-extrabold text-[#002147] dark:text-white tracking-tighter font-headline">
+        Korventis
+      </a>
+      <div class="hidden md:flex items-center gap-10">
+        <a class="text-[#0054cd] dark:text-blue-400 border-b-2 border-[#0054cd] pb-1 font-headline font-bold tracking-tight"
+          href="index.html">Home</a>
+        <a class="text-slate-600 dark:text-slate-400 hover:text-[#0054cd] transition-colors duration-300 font-headline font-bold tracking-tight"
+          href="about.html">About</a>
+        <a class="text-slate-600 dark:text-slate-400 hover:text-[#0054cd] transition-colors duration-300 font-headline font-bold tracking-tight"
+          href="services.html">Services</a>
+        <a class="text-slate-600 dark:text-slate-400 hover:text-[#0054cd] transition-colors duration-300 font-headline font-bold tracking-tight"
+          href="portfolio.html">Portfolio</a>
+        <a class="text-slate-600 dark:text-slate-400 hover:text-[#0054cd] transition-colors duration-300 font-headline font-bold tracking-tight"
+          href="blog.html">Blog</a>
+        <a class="text-slate-600 dark:text-slate-400 hover:text-[#0054cd] transition-colors duration-300 font-headline font-bold tracking-tight"
+          href="contact.html">Contact</a>
+      </div>
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" class="md:hidden flex items-center text-[#002147] dark:text-white">
+        <span class="material-symbols-outlined text-3xl">menu</span>
+      </button>
+      <a href="contact.html"
+        class="hidden md:inline-block bg-action-gradient text-white px-6 py-2.5 rounded-lg font-bold text-sm scale-95 active:opacity-80 transition-transform shadow-lg">
+        Get a Quote
+      </a>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu"
+      class="hidden md:hidden bg-white/95 dark:bg-slate-950/95 backdrop-blur-xl border-t border-outline-variant/10">
+      <div class="flex flex-col px-8 py-6 gap-4">
+        <a class="text-[#0054cd] font-headline font-bold tracking-tight" href="index.html">Home</a>
+        <a class="text-slate-600 dark:text-slate-400 font-headline font-bold tracking-tight" href="about.html">About</a>
+        <a class="text-slate-600 dark:text-slate-400 font-headline font-bold tracking-tight"
+          href="services.html">Services</a>
+        <a class="text-slate-600 dark:text-slate-400 font-headline font-bold tracking-tight"
+          href="portfolio.html">Portfolio</a>
+        <a class="text-slate-600 dark:text-slate-400 font-headline font-bold tracking-tight" href="blog.html">Blog</a>
+        <a class="text-slate-600 dark:text-slate-400 font-headline font-bold tracking-tight"
+          href="contact.html">Contact</a>
+        <a href="contact.html"
+          class="bg-action-gradient text-white px-6 py-2.5 rounded-lg font-bold text-sm text-center shadow-lg mt-2">Get
+          a Quote</a>
+      </div>
+    </div>
+  </nav>
+  <!-- Hero Section -->
+  <header class="relative min-h-screen flex items-center pt-20 overflow-hidden bg-surface">
+    <div class="max-w-7xl mx-auto px-8 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <div class="lg:col-span-7 z-10">
+        <div class="mb-6 inline-flex items-center gap-2 px-3 py-1 bg-primary-container/5 rounded-full">
+          <span class="text-[10px] uppercase tracking-[0.15em] font-bold text-secondary font-label">Future-Ready
+            Technology</span>
+        </div>
+        <h1
+          class="text-5xl md:text-7xl font-extrabold text-primary-container font-headline leading-[1.1] tracking-tighter mb-8">
+          Empowering Your Business Through <span class="text-secondary">Innovative</span> Technology Solutions.
+        </h1>
+        <p class="text-lg md:text-xl text-on-surface-variant max-w-xl mb-10 leading-relaxed">
+          We architect bespoke digital ecosystems that drive growth, efficiency, and market leadership for the world's
+          most ambitious enterprises.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="contact.html"
+            class="bg-action-gradient text-on-primary px-8 py-4 rounded-lg font-bold text-base shadow-xl hover:shadow-2xl transition-all active:scale-95">
+            Get a Quote
+          </a>
+          <a href="portfolio.html"
+            class="px-8 py-4 rounded-lg font-bold text-base text-primary-container border-2 border-outline-variant/30 hover:bg-surface-container-low transition-colors">
+            View Portfolio
+          </a>
+        </div>
+      </div>
+      <div class="lg:col-span-5 relative">
+        <div class="aspect-square bg-surface-container-low rounded-[2rem] overflow-hidden shadow-2xl relative">
+          <img alt="Tech Collaboration" class="w-full h-full object-cover"
+            data-alt="Modern minimalist office space with software engineers collaborating around high-end computer workstations, bright natural light, professional blue tones"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXOGRvTzPG4F6UBjynU-jhg7uZUPUGFBqnOj84GWrzZhKtEhXYcepIZsKBm-LLpJlU73SEsX-fUjfObOYvw45FmlVP46fXPYpLNwPafcWjAJkhR2EGfoczyJxj6jq4Fe7uevHfdRW2TSNM8eUbzKocDBtEdDn5nkytjh-hqShkg3VKIs6qUgz7DrthvRWDpRmcobvKqcrlgupES2LvPsqMtWfnCR7JWapGRJdQVJKGFVljNO0KRH3hIDVOQSTKV0VPgciOU1e7tlQ" />
+          <div class="absolute inset-0 bg-gradient-to-t from-primary-container/20 to-transparent"></div>
+        </div>
+        <!-- Floating Card -->
+        <div
+          class="absolute -bottom-6 -left-6 bg-surface-container-lowest p-6 rounded-xl shadow-[0_24px_48px_-12px_rgba(0,33,71,0.08)] hidden md:block border border-outline-variant/10">
+          <div class="flex items-center gap-4">
+            <div class="h-12 w-12 rounded-full bg-secondary/10 flex items-center justify-center text-secondary">
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">insights</span>
+            </div>
+            <div>
+              <div class="text-xl font-bold text-primary-container font-headline">99.9%</div>
+              <div class="text-xs text-on-surface-variant font-label">System Reliability</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Subtle Architectural Background Element -->
+    <div class="absolute top-0 right-0 -z-10 w-1/3 h-full bg-surface-container-low/50 skew-x-12 translate-x-20"></div>
+  </header>
+  <!-- Trust / Clients Section -->
+  <section class="py-24 bg-surface-container-low">
+    <div class="max-w-7xl mx-auto px-8">
+      <div class="text-center mb-12">
+        <span class="text-xs font-bold uppercase tracking-widest text-on-surface-variant opacity-60">Trusted by Global
+          Leaders</span>
+      </div>
+      <div
+        class="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-40 grayscale hover:grayscale-0 transition-all duration-500">
+        <div class="text-2xl font-black font-headline text-primary-container tracking-tighter">NEXUS</div>
+        <div class="text-2xl font-black font-headline text-primary-container tracking-tighter">VERTEX</div>
+        <div class="text-2xl font-black font-headline text-primary-container tracking-tighter">QUANTUM</div>
+        <div class="text-2xl font-black font-headline text-primary-container tracking-tighter">AETHER</div>
+        <div class="text-2xl font-black font-headline text-primary-container tracking-tighter">FLUX</div>
+      </div>
+    </div>
+  </section>
+  <!-- Services Section (Bento Grid) -->
+  <section class="py-32 bg-background">
+    <div class="max-w-7xl mx-auto px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
+        <div class="max-w-2xl">
+          <h2 class="text-4xl md:text-5xl font-extrabold text-primary-container font-headline tracking-tight mb-6">
+            Cutting-Edge Solutions for Modern Enterprises.</h2>
+          <p class="text-on-surface-variant text-lg leading-relaxed">We don't just build software; we engineer
+            competitive advantages. Our specialized teams focus on high-performance digital infrastructure.</p>
+        </div>
+        <a class="text-secondary font-bold flex items-center gap-2 group mb-2" href="/services.html">
+          Explore All Services
+          <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+        </a>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Large Service Card -->
+        <div
+          class="md:col-span-2 bg-surface-container-low rounded-2xl p-10 flex flex-col justify-between min-h-[400px] group hover:bg-surface-container-lowest transition-all duration-500 hover:shadow-[0_24px_48px_-12px_rgba(0,33,71,0.08)]">
+          <div>
+            <div class="h-14 w-14 rounded-xl bg-white flex items-center justify-center text-secondary mb-8 shadow-sm">
+              <span class="material-symbols-outlined text-3xl">code</span>
+            </div>
+            <h3 class="text-3xl font-bold text-primary-container font-headline mb-4">Web Development</h3>
+            <p class="text-on-surface-variant leading-relaxed max-w-md">Scalable, high-performance web architectures
+              built with the latest frameworks to ensure speed, security, and seamless user experiences.</p>
+          </div>
+          <div class="mt-8 flex gap-4 overflow-hidden">
+            <span class="px-3 py-1 bg-white/50 rounded-full text-xs font-semibold text-primary-container">React</span>
+            <span class="px-3 py-1 bg-white/50 rounded-full text-xs font-semibold text-primary-container">Node.js</span>
+            <span class="px-3 py-1 bg-white/50 rounded-full text-xs font-semibold text-primary-container">Next.js</span>
+          </div>
+        </div>
+        <!-- Small Service Card 1 -->
+        <div
+          class="bg-primary-container text-white rounded-2xl p-10 flex flex-col justify-between group hover:translate-y-[-8px] transition-all duration-500 shadow-xl">
+          <div>
+            <div class="h-14 w-14 rounded-xl bg-white/10 flex items-center justify-center text-white mb-8">
+              <span class="material-symbols-outlined text-3xl"
+                style="font-variation-settings: 'FILL' 1;">smartphone</span>
+            </div>
+            <h3 class="text-2xl font-bold font-headline mb-4">App Development</h3>
+            <p class="text-on-primary-container leading-relaxed">Native and cross-platform mobile solutions designed for
+              maximum engagement and flawless performance.</p>
+          </div>
+          <button class="mt-8 text-white font-bold flex items-center gap-2 group/btn">
+            Learn More <span
+              class="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+          </button>
+        </div>
+        <!-- Small Service Card 2 -->
+        <div
+          class="bg-surface-container-low rounded-2xl p-10 flex flex-col justify-between group hover:bg-surface-container-lowest transition-all duration-500 hover:shadow-[0_24px_48px_-12px_rgba(0,33,71,0.08)]">
+          <div>
+            <div class="h-14 w-14 rounded-xl bg-white flex items-center justify-center text-secondary mb-8 shadow-sm">
+              <span class="material-symbols-outlined text-3xl">cloud_done</span>
+            </div>
+            <h3 class="text-2xl font-bold text-primary-container font-headline mb-4">SaaS Solutions</h3>
+            <p class="text-on-surface-variant leading-relaxed">End-to-end multi-tenant architectures engineered for
+              infinite scalability and robust data security.</p>
+          </div>
+        </div>
+        <!-- Small Service Card 3 -->
+        <div
+          class="bg-surface-container-low rounded-2xl p-10 flex flex-col justify-between group hover:bg-surface-container-lowest transition-all duration-500 hover:shadow-[0_24px_48px_-12px_rgba(0,33,71,0.08)]">
+          <div>
+            <div class="h-14 w-14 rounded-xl bg-white flex items-center justify-center text-secondary mb-8 shadow-sm">
+              <span class="material-symbols-outlined text-3xl">terminal</span>
+            </div>
+            <h3 class="text-2xl font-bold text-primary-container font-headline mb-4">Custom Software</h3>
+            <p class="text-on-surface-variant leading-relaxed">Tailored enterprise applications that solve unique
+              operational challenges and automate complex workflows.</p>
+          </div>
+        </div>
+        <!-- Small Service Card 4 -->
+        <div
+          class="bg-surface-container-low rounded-2xl p-10 flex flex-col justify-between group hover:bg-surface-container-lowest transition-all duration-500 hover:shadow-[0_24px_48px_-12px_rgba(0,33,71,0.08)]">
+          <div>
+            <div class="h-14 w-14 rounded-xl bg-white flex items-center justify-center text-secondary mb-8 shadow-sm">
+              <span class="material-symbols-outlined text-3xl">trending_up</span>
+            </div>
+            <h3 class="text-2xl font-bold text-primary-container font-headline mb-4">SEO Mastery</h3>
+            <p class="text-on-surface-variant leading-relaxed">Data-driven search strategies that dominate rankings and
+              turn organic traffic into loyal revenue.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Why Choose Us Section -->
+  <section class="py-32 bg-surface-container-low relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+      <div>
+        <span class="text-secondary font-bold tracking-[0.2em] uppercase text-xs mb-4 block">The Korventis
+          Advantage</span>
+        <h2 class="text-4xl md:text-5xl font-extrabold text-primary-container font-headline mb-10 tracking-tight">Why
+          Industry Leaders Choose Us.</h2>
+        <div class="space-y-12">
+          <div class="flex gap-6">
+            <div class="shrink-0 h-10 w-10 flex items-center justify-center text-secondary border-l-4 border-secondary">
+            </div>
+            <div>
+              <h4 class="text-xl font-bold text-primary-container mb-2 font-headline">Unwavering Reliability</h4>
+              <p class="text-on-surface-variant leading-relaxed">We deliver mission-critical systems with documented
+                99.9% uptime and zero-compromise security protocols.</p>
+            </div>
+          </div>
+          <div class="flex gap-6">
+            <div class="shrink-0 h-10 w-10 flex items-center justify-center text-secondary border-l-4 border-secondary">
+            </div>
+            <div>
+              <h4 class="text-xl font-bold text-primary-container mb-2 font-headline">Deep Technical Expertise</h4>
+              <p class="text-on-surface-variant leading-relaxed">Our senior architects bring decades of experience in
+                solving the most complex engineering hurdles.</p>
+            </div>
+          </div>
+          <div class="flex gap-6">
+            <div class="shrink-0 h-10 w-10 flex items-center justify-center text-secondary border-l-4 border-secondary">
+            </div>
+            <div>
+              <h4 class="text-xl font-bold text-primary-container mb-2 font-headline">Continuous Innovation</h4>
+              <p class="text-on-surface-variant leading-relaxed">We don't just follow trends; we set them by integrating
+                AI and emerging tech into every project lifecycle.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="aspect-[4/5] bg-surface-container-lowest rounded-3xl overflow-hidden shadow-2xl">
+          <img alt="High Tech Engineering" class="w-full h-full object-cover"
+            data-alt="Close up of a server room with blue ambient lighting, representing advanced technology infrastructure and high-level software engineering"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAj5AHqO2Q8ost3RMOoCS8N0MvbH2Ui5y2C6zNfObpwNxX5tzY72PbZL3Xbw14z2RnJivyzMmKIh6xj0wZLl7gfFbDYH7dgz1F1SJQVr3NVUyyBHzhrp0K33jl-JvZp5F4oJhYGmcS5Z9Z0ntbEWlMye-RbuOO8w9MiTVyvkbPtwGyLpv0ClmvpXtfOjwceMNQz14pAyV_s7yf02NfrwaVzyBpUJeLhpvWZ9GKuJ3yTwp02zzpE5zBiLdHSEjzR9sPcWJUz0SLFqpE" />
+        </div>
+        <!-- Glass Overlay Stats -->
+        <div
+          class="absolute top-1/2 -right-12 -translate-y-1/2 bg-white/80 backdrop-blur-xl p-8 rounded-2xl shadow-2xl hidden xl:block border border-white/40">
+          <div class="space-y-6">
+            <div>
+              <div class="text-3xl font-extrabold text-secondary font-headline">250+</div>
+              <div class="text-sm font-bold text-primary-container">Projects Delivered</div>
+            </div>
+            <div class="w-full h-[1px] bg-outline-variant/20"></div>
+            <div>
+              <div class="text-3xl font-extrabold text-secondary font-headline">15+</div>
+              <div class="text-sm font-bold text-primary-container">Global Patents</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Final CTA Section -->
+  <section class="py-24 bg-background">
+    <div class="max-w-7xl mx-auto px-8">
+      <div class="bg-primary-container rounded-[2.5rem] p-12 md:p-24 text-center relative overflow-hidden shadow-2xl">
+        <!-- Background Decoration -->
+        <div class="absolute inset-0 opacity-10 pointer-events-none">
+          <div class="absolute -top-24 -left-24 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+          <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-secondary rounded-full blur-3xl"></div>
+        </div>
+        <div class="relative z-10 max-w-3xl mx-auto">
+          <h2 class="text-4xl md:text-6xl font-extrabold text-white font-headline mb-8 tracking-tighter">Ready to
+            Architect Your Digital Future?</h2>
+          <p class="text-on-primary-container text-lg md:text-xl mb-12 leading-relaxed opacity-80">Join the ranks of
+            high-growth companies leveraging Korventis for unparalleled technological scale.</p>
+          <a href="contact.html"
+            class="bg-action-gradient text-white px-10 py-5 rounded-lg font-bold text-lg shadow-2xl hover:scale-105 active:scale-95 transition-all">
+            Get a Quote Today
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-[#f2f4f6] dark:bg-slate-900 w-full pt-20 pb-10">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto px-8 font-body text-sm antialiased">
+      <div class="md:col-span-1">
+        <a href="index.html"
+          class="text-xl font-bold text-[#002147] dark:text-white mb-6 block font-headline">Korventis</a>
+        <p class="text-slate-500 dark:text-slate-400 leading-relaxed">
+          Premium technology solutions for businesses that refuse to settle for the status quo. Global reach,
+          architectural precision.
+        </p>
+        <div class="mt-8 flex gap-4">
+          <span
+            class="material-symbols-outlined text-slate-400 hover:text-secondary cursor-pointer transition-colors">hub</span>
+          <span
+            class="material-symbols-outlined text-slate-400 hover:text-secondary cursor-pointer transition-colors">public</span>
+          <span
+            class="material-symbols-outlined text-slate-400 hover:text-secondary cursor-pointer transition-colors">terminal</span>
+        </div>
+      </div>
+      <div class="flex flex-col gap-4">
+        <h5 class="text-[#002147] dark:text-white font-bold mb-2 font-headline">Services</h5>
+        <a class="text-slate-500 dark:text-slate-400 hover:text-[#002147] dark:hover:text-white transition-opacity"
+          href="services.html">Web Development</a>
+        <a class="text-slate-500 dark:text-slate-400 hover:text-[#002147] dark:hover:text-white transition-opacity"
+          href="services.html">App Development</a>
+        <a class="text-slate-500 dark:text-slate-400 hover:text-[#002147] dark:hover:text-white transition-opacity"
+          href="services.html">SaaS Solutions</a>
+        <a class="text-slate-500 dark:text-slate-400 hover:text-[#002147] dark:hover:text-white transition-opacity"
+          href="services.html">SEO Strategy</a>
+      </div>
+      <div class="flex flex-col gap-4">
+        <h5 class="text-[#002147] dark:text-white font-bold mb-2 font-headline">Company</h5>
+        <a class="text-slate-500 dark:text-slate-400 hover:text-[#002147] dark:hover:text-white transition-opacity"
+          href="about.html">About Us</a>
+        <a class="text-slate-500 dark:text-slate-400 hover:text-[#002147] dark:hover:text-white transition-opacity"
+          href="portfolio.html">Portfolio</a>
+        <a class="text-slate-500 dark:text-slate-400 hover:text-[#002147] dark:hover:text-white transition-opacity"
+          href="blog.html">Blog</a>
+        <a class="text-slate-500 dark:text-slate-400 hover:text-[#002147] dark:hover:text-white transition-opacity"
+          href="contact.html">Contact</a>
+      </div>
+      <div class="flex flex-col gap-4">
+        <h5 class="text-[#002147] dark:text-white font-bold mb-2 font-headline">Get Started</h5>
+        <p class="text-slate-500 dark:text-slate-400 mb-2">Schedule a discovery call with our architectural leads.</p>
+        <a href="contact.html"
+          class="bg-primary-container text-white px-6 py-3 rounded-lg font-bold text-sm shadow-md hover:bg-secondary transition-colors text-center">
+          Get a Quote
+        </a>
+      </div>
+    </div>
+    <div
+      class="max-w-7xl mx-auto px-8 mt-20 pt-10 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center gap-6">
+      <div class="text-slate-500 dark:text-slate-400">© 2025 Korventis. All rights reserved.</div>
+      <div class="flex flex-wrap gap-8">
+        <a class="text-slate-500 dark:text-slate-400 hover:text-[#002147] dark:hover:text-white underline-offset-4 hover:underline"
+          href="privacy_policy.html">Privacy Policy</a>
+        <a class="text-slate-500 dark:text-slate-400 hover:text-[#002147] dark:hover:text-white underline-offset-4 hover:underline"
+          href="terms_of_service.html">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+  <!-- Mobile Menu Script -->
+  <script>
+    document.getElementById('mobile-menu-btn').addEventListener('click', function () {
+      const menu = document.getElementById('mobile-menu');
+      const icon = this.querySelector('.material-symbols-outlined');
+      menu.classList.toggle('hidden');
+      icon.textContent = menu.classList.contains('hidden') ? 'menu' : 'close';
+    });
+  </script>
+</body>
+
+</html>

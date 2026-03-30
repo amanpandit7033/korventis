@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth light" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Korventis | About Our Architectural Authority</title>
+  <meta name="description"
+    content="Learn about Korventis — a premier tech consultancy founded in London, dedicated to crafting sophisticated digital infrastructure with architectural precision." />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-error-container": "#93000a",
+            "inverse-surface": "#2d3133",
+            "on-secondary-container": "#fefcff",
+            "tertiary-fixed-dim": "#b7c8e1",
+            "surface-tint": "#465f88",
+            "on-tertiary-fixed-variant": "#38485d",
+            "secondary": "#0054cd",
+            "outline-variant": "#c4c6cf",
+            "outline": "#74777f",
+            "tertiary-fixed": "#d3e4fe",
+            "error": "#ba1a1a",
+            "on-primary-fixed-variant": "#2d476f",
+            "on-secondary-fixed": "#001847",
+            "on-background": "#191c1e",
+            "surface-container": "#eceef0",
+            "inverse-primary": "#aec7f6",
+            "surface-container-lowest": "#ffffff",
+            "surface-variant": "#e0e3e5",
+            "primary": "#000a1e",
+            "tertiary-container": "#122236",
+            "on-primary": "#ffffff",
+            "secondary-fixed-dim": "#b2c5ff",
+            "on-primary-fixed": "#001b3d",
+            "on-primary-container": "#708ab5",
+            "error-container": "#ffdad6",
+            "on-surface": "#191c1e",
+            "surface-bright": "#f7f9fb",
+            "surface-container-highest": "#e0e3e5",
+            "inverse-on-surface": "#eff1f3",
+            "secondary-container": "#316ee9",
+            "primary-container": "#002147",
+            "surface": "#f7f9fb",
+            "on-tertiary-container": "#7a8aa2",
+            "surface-container-high": "#e6e8ea",
+            "primary-fixed-dim": "#aec7f6",
+            "on-tertiary-fixed": "#0b1c30",
+            "surface-dim": "#d8dadc",
+            "surface-container-low": "#f2f4f6",
+            "on-surface-variant": "#44474e",
+            "on-secondary": "#ffffff",
+            "tertiary": "#000b1b",
+            "on-error": "#ffffff",
+            "background": "#f7f9fb",
+            "primary-fixed": "#d6e3ff",
+            "on-tertiary": "#ffffff",
+            "secondary-fixed": "#dae2ff",
+            "on-secondary-fixed-variant": "#0040a1"
+          },
+          fontFamily: {
+            "headline": ["Manrope"],
+            "body": ["Inter"],
+            "label": ["Inter"]
+          },
+          borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+
+    .glass-effect {
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+  </style>
+</head>
+
+<body class="bg-background text-on-surface font-body antialiased">
+  <!-- TopNavBar -->
+  <nav
+    class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-[0_24px_48px_-12px_rgba(0,33,71,0.08)]">
+    <div class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20">
+      <a href="index.html"
+        class="text-2xl font-extrabold text-[#002147] dark:text-white tracking-tighter font-headline">Korventis</a>
+      <div class="hidden md:flex items-center gap-10">
+        <a class="text-slate-600 dark:text-slate-400 hover:text-[#0054cd] transition-colors duration-300 font-headline font-bold tracking-tight"
+          href="index.html">Home</a>
+        <a class="text-[#0054cd] dark:text-blue-400 border-b-2 border-[#0054cd] pb-1 font-headline font-bold tracking-tight"
+          href="about.html">About</a>
+        <a class="text-slate-600 dark:text-slate-400 hover:text-[#0054cd] transition-colors duration-300 font-headline font-bold tracking-tight"
+          href="services.html">Services</a>
+        <a class="text-slate-600 dark:text-slate-400 hover:text-[#0054cd] transition-colors duration-300 font-headline font-bold tracking-tight"
+          href="portfolio.html">Portfolio</a>
+        <a class="text-slate-600 dark:text-slate-400 hover:text-[#0054cd] transition-colors duration-300 font-headline font-bold tracking-tight"
+          href="blog.html">Blog</a>
+        <a class="text-slate-600 dark:text-slate-400 hover:text-[#0054cd] transition-colors duration-300 font-headline font-bold tracking-tight"
+          href="contact.html">Contact</a>
+      </div>
+      <button id="mobile-menu-btn" class="md:hidden flex items-center text-[#002147] dark:text-white">
+        <span class="material-symbols-outlined text-3xl">menu</span>
+      </button>
+      <a href="contact.html"
+        class="hidden md:inline-block bg-gradient-to-br from-secondary to-secondary-container text-white px-6 py-2.5 rounded-lg font-bold text-sm scale-95 active:opacity-80 transition-transform shadow-lg">
+        Get a Quote
+      </a>
+    </div>
+    <div id="mobile-menu"
+      class="hidden md:hidden bg-white/95 dark:bg-slate-950/95 backdrop-blur-xl border-t border-outline-variant/10">
+      <div class="flex flex-col px-8 py-6 gap-4">
+        <a class="text-slate-600 dark:text-slate-400 font-headline font-bold tracking-tight" href="index.html">Home</a>
+        <a class="text-[#0054cd] font-headline font-bold tracking-tight" href="about.html">About</a>
+        <a class="text-slate-600 dark:text-slate-400 font-headline font-bold tracking-tight"
+          href="services.html">Services</a>
+        <a class="text-slate-600 dark:text-slate-400 font-headline font-bold tracking-tight"
+          href="portfolio.html">Portfolio</a>
+        <a class="text-slate-600 dark:text-slate-400 font-headline font-bold tracking-tight" href="blog.html">Blog</a>
+        <a class="text-slate-600 dark:text-slate-400 font-headline font-bold tracking-tight"
+          href="contact.html">Contact</a>
+        <a href="contact.html"
+          class="bg-gradient-to-br from-secondary to-secondary-container text-white px-6 py-2.5 rounded-lg font-bold text-sm text-center shadow-lg mt-2">Get
+          a Quote</a>
+      </div>
+    </div>
+  </nav>
+  <main class="pt-20">
+    <!-- Hero Section -->
+    <section class="relative h-[716px] flex items-center overflow-hidden bg-primary-container">
+      <div class="absolute inset-0 opacity-40">
+        <img class="w-full h-full object-cover"
+          data-alt="Modern minimalist architectural interior with clean lines, soft natural lighting through large windows, and deep blue accent walls"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSt1TXpgC1Me6_FvDtFYAbQEnga-sYRjvdtlM9Jx2m5dR_3UwgZLO9MwDYQrqF4C8Av05MW6KXcQNvPhdhgrhXGtN17xLcE1-XlUMtsOSuZH41ZCe39QHPmBBkW3sZB7kc-HBpqPLBrPBygRvO04rtdLcWDIV4mcF1U1IPg31eAAJJ_ykjHiCJ_UhpyJUm8MqAeflGIScm_i5D0Jny3WwetIQMj66f6zMBQOBNPwsLPqjeVt92SIckc5M1wBF6XxCso7YHIE5TW30" />
+      </div>
+      <div class="relative max-w-7xl mx-auto px-8 w-full">
+        <div class="max-w-3xl">
+          <span class="text-secondary-fixed text-xs font-extrabold tracking-[0.2em] uppercase mb-4 block">Our
+            Legacy</span>
+          <h1 class="text-white text-6xl md:text-8xl font-headline font-extrabold tracking-tighter leading-none mb-8">
+            The Architectural <br /><span class="text-secondary-fixed-dim">Authority</span>
+          </h1>
+          <p class="text-on-primary-container text-xl max-w-xl leading-relaxed">
+            Korventis was founded on the principle that technology should be as enduring and precise as fine
+            architecture. We don't just build software; we craft digital estates.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Our Story -->
+    <section class="py-32 bg-surface">
+      <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+        <div class="relative">
+          <div class="aspect-[4/5] bg-surface-container-high rounded-xl overflow-hidden shadow-2xl">
+            <img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+              data-alt="Boutique creative team collaborating in a high-end office space with industrial design elements and soft atmospheric lighting"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBp0-1o7goKQL8M_6ovraRvbO6gXLl7LKdQ3hpN2ZQ4l4Q2npBufAFJORvVZGHKm2znq2hxt00N56jn852sKayg1mWb6N-7RLArDDd6bkLOvfsHuPof9WpM1dzJlAK3ThfJ-XiErD7impmfRA1Bc7Y3MkBqzDyFIRzExmZInqbhyDi5pNgeWyt7C-538cYa-p9vr4py2meS3868laPGxRFr8eSrfkQlp8Ed2rMxDbL2CtxI_Dr4Nv8Mgf61nxX4duvRp7DNP4cm1kg" />
+          </div>
+          <div class="absolute -bottom-12 -right-12 bg-primary-container p-12 hidden md:block">
+            <span class="text-secondary-fixed text-5xl font-headline font-bold block">2014</span>
+            <span class="text-on-primary-container text-sm font-label uppercase tracking-widest">Est. London</span>
+          </div>
+        </div>
+        <div>
+          <span class="text-secondary font-bold text-sm tracking-widest uppercase mb-6 block">Our Story</span>
+          <h2 class="text-4xl md:text-5xl font-headline font-bold text-primary mb-8 leading-tight">From a single desk to
+            a global standard.</h2>
+          <div class="space-y-6 text-on-surface-variant text-lg leading-relaxed">
+            <p>
+              Korventis began in a small studio in East London, where our founders sought to bridge the gap between
+              high-end aesthetic design and robust technical engineering. We noticed a world full of functional but
+              uninspired tools.
+            </p>
+            <p>
+              Over the last decade, we have evolved into a premier tech consultancy, serving Fortune 500 companies and
+              visionary startups alike. Our journey is defined by a relentless pursuit of "The Gold Standard" in every
+              line of code and every pixel rendered.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Mission & Vision: Side-by-Side Grid -->
+    <section class="py-32 bg-surface-container-low">
+      <div class="max-w-7xl mx-auto px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-outline-variant/20 rounded-2xl overflow-hidden shadow-sm">
+          <!-- Mission -->
+          <div class="bg-surface-container-lowest p-16 group hover:bg-primary-container transition-colors duration-500">
+            <div
+              class="w-16 h-16 bg-secondary-container/10 rounded-full flex items-center justify-center mb-10 group-hover:bg-secondary transition-colors">
+              <span
+                class="material-symbols-outlined text-secondary text-3xl group-hover:text-white">rocket_launch</span>
+            </div>
+            <h3 class="text-3xl font-headline font-bold text-primary group-hover:text-white mb-6">Our Mission</h3>
+            <p class="text-on-surface-variant group-hover:text-on-primary-container text-lg leading-relaxed">
+              To empower industry leaders with sophisticated digital infrastructure that harmonizes brutal efficiency
+              with editorial beauty, ensuring every client project achieves architectural authority.
+            </p>
+          </div>
+          <!-- Vision -->
+          <div class="bg-surface-container-lowest p-16 group hover:bg-primary-container transition-colors duration-500">
+            <div
+              class="w-16 h-16 bg-secondary-container/10 rounded-full flex items-center justify-center mb-10 group-hover:bg-secondary transition-colors">
+              <span class="material-symbols-outlined text-secondary text-3xl group-hover:text-white">visibility</span>
+            </div>
+            <h3 class="text-3xl font-headline font-bold text-primary group-hover:text-white mb-6">Our Vision</h3>
+            <p class="text-on-surface-variant group-hover:text-on-primary-container text-lg leading-relaxed">
+              To redefine the global tech landscape where software is viewed not as a utility, but as a masterpiece of
+              structural integrity and human-centric design.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Meet the Team -->
+    <section class="py-32 bg-background">
+      <div class="max-w-7xl mx-auto px-8">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+          <div class="max-w-2xl">
+            <span class="text-secondary font-bold text-sm tracking-widest uppercase mb-4 block">The Architects</span>
+            <h2 class="text-5xl font-headline font-bold text-primary">The minds behind the craft.</h2>
+          </div>
+          <p class="text-on-surface-variant text-lg">Guided by a leadership team with decades of combined experience in
+            high-stakes technology and world-class design.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <!-- CEO -->
+          <div class="group">
+            <div class="aspect-[3/4] overflow-hidden mb-8 relative">
+              <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                data-alt="Professional portrait of a male executive in a tailored navy suit standing against a modern architectural background"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwape382K5-OKQQVs3N5UZIEVnhdfl0wEEpNzv-2A7XISzur3ZwTpvxkj1mjSE1mbBdyrJapOCKsRJ3GpGQhkvNZPD7O2WyQhbKhQzhfJ2iofW5m8849OmznvPOY2ohBhKrzSeaCBfPEpL70Ns6U3hX4_VgcmcTFa1GRQ2lBtoNY_xnSs_S_px0DIfxTO1oIsaGJvQjjcq14KH2jwRg62rJAMelyhv9jSjcJURIdCnH8VPyfx2kQkEqHoqdppHbbWb9NxrVph2Irw" />
+              <div
+                class="absolute inset-0 bg-primary-container/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+              </div>
+            </div>
+            <h4 class="text-2xl font-headline font-bold text-primary mb-1">Marcus Korvent</h4>
+            <p class="text-secondary font-semibold uppercase text-xs tracking-widest mb-4">Founder &amp; CEO</p>
+            <p class="text-on-surface-variant text-sm leading-relaxed">Visionary leader focused on global expansion and
+              the intersection of finance and technology.</p>
+          </div>
+          <!-- CTO -->
+          <div class="group">
+            <div class="aspect-[3/4] overflow-hidden mb-8 relative">
+              <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                data-alt="Confident female technology leader in a minimalist modern workspace with soft sunlight and glass partitions"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmEA6Z_Bt-bLgjNtP-zLNAADkK4Zs_nOVLZvLoMPfLmFNzvxVHnSqLhcGreJV3HXK5eLqpNpq_VseU36oPiVunKvYtL3Cz7LfWVzrNyGRC40RGO_7uscz5fTF8oqJxU4DboB1xks9cxy9xR2dktseV2pJ7bsDHRa5ChT3PFiWs_y5Rjsqai_h-NGCHiG7kKGcCJulug-m2Dy6lPtLMYS4YwwM0nOXsHDCoL44SZRwnLL5VLX_QWHwGoqnNv6sfs-2y-KOnha-ho3g" />
+              <div
+                class="absolute inset-0 bg-primary-container/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+              </div>
+            </div>
+            <h4 class="text-2xl font-headline font-bold text-primary mb-1">Dr. Elena Vance</h4>
+            <p class="text-secondary font-semibold uppercase text-xs tracking-widest mb-4">Chief Technology Officer</p>
+            <p class="text-on-surface-variant text-sm leading-relaxed">Leading our systems architecture with a focus on
+              scalable cloud infrastructure and security.</p>
+          </div>
+          <!-- Lead Designer -->
+          <div class="group">
+            <div class="aspect-[3/4] overflow-hidden mb-8 relative">
+              <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                data-alt="Creative male professional in a smart casual outfit sitting in a bright airy design studio with artful sketches in the background"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFqV8XQiSBbEWQMkkzqUlQa_3qPMGjZ4388W828KJ4Y-6fB1nqoF4SSyHTMKNLt1EXTAD55_3ZvRaYZN-gZ9ymlU3pK7NdVMfBulIJBawfUYIATL8b44r_ghTmf92huCWL7g0c6teASmGDPRrrjrtCjysyV-K9JqlrMldTUuM89-3Il0n5uUezO7hxker0KXEMPkuxUyb7ZQNk-JadkEqfHL7MaIXCkXZ8DEGnjCpxWrzs9W-WQV56HSorYgJotGB0FtzYlaWssGQ" />
+              <div
+                class="absolute inset-0 bg-primary-container/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+              </div>
+            </div>
+            <h4 class="text-2xl font-headline font-bold text-primary mb-1">Julian Thorne</h4>
+            <p class="text-secondary font-semibold uppercase text-xs tracking-widest mb-4">Lead Digital Architect</p>
+            <p class="text-on-surface-variant text-sm leading-relaxed">The eye behind our signature editorial aesthetic
+              and immersive user experiences.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Corporate Timeline -->
+    <section class="py-32 bg-surface-container-low">
+      <div class="max-w-7xl mx-auto px-8">
+        <h2 class="text-4xl font-headline font-bold text-primary mb-20 text-center">Milestones of Excellence</h2>
+        <div class="relative">
+          <!-- Timeline Line -->
+          <div class="absolute left-1/2 top-0 bottom-0 w-px bg-outline-variant hidden md:block"></div>
+          <div class="space-y-24">
+            <!-- 2014 -->
+            <div class="relative flex flex-col md:flex-row items-center md:items-start">
+              <div class="md:w-1/2 md:pr-16 text-center md:text-right mb-8 md:mb-0">
+                <span class="text-4xl font-headline font-black text-secondary/30 mb-2 block">2014</span>
+                <h5 class="text-xl font-bold text-primary mb-3">Founding in London</h5>
+                <p class="text-on-surface-variant">The birth of Korventis in a small East London studio with a mission
+                  to elevate digital design.</p>
+              </div>
+              <div
+                class="absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-secondary rounded-full border-4 border-surface hidden md:block">
+              </div>
+              <div class="md:w-1/2 md:pl-16"></div>
+            </div>
+            <!-- 2017 -->
+            <div class="relative flex flex-col md:flex-row items-center md:items-start">
+              <div class="md:w-1/2 md:pr-16"></div>
+              <div
+                class="absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-secondary rounded-full border-4 border-surface hidden md:block">
+              </div>
+              <div class="md:w-1/2 md:pl-16 text-center md:text-left mb-8 md:mb-0">
+                <span class="text-4xl font-headline font-black text-secondary/30 mb-2 block">2017</span>
+                <h5 class="text-xl font-bold text-primary mb-3">Expansion to New York</h5>
+                <p class="text-on-surface-variant">Opened our North American headquarters to better serve our growing
+                  list of Fortune 500 partners.</p>
+              </div>
+            </div>
+            <!-- 2021 -->
+            <div class="relative flex flex-col md:flex-row items-center md:items-start">
+              <div class="md:w-1/2 md:pr-16 text-center md:text-right mb-8 md:mb-0">
+                <span class="text-4xl font-headline font-black text-secondary/30 mb-2 block">2021</span>
+                <h5 class="text-xl font-bold text-primary mb-3">Architectural Framework 1.0</h5>
+                <p class="text-on-surface-variant">Launched our proprietary development framework, setting a new
+                  industry standard for performance.</p>
+              </div>
+              <div
+                class="absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-secondary rounded-full border-4 border-surface hidden md:block">
+              </div>
+              <div class="md:w-1/2 md:pl-16"></div>
+            </div>
+            <!-- Present -->
+            <div class="relative flex flex-col md:flex-row items-center md:items-start">
+              <div class="md:w-1/2 md:pr-16"></div>
+              <div
+                class="absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-secondary rounded-full border-4 border-surface hidden md:block">
+              </div>
+              <div class="md:w-1/2 md:pl-16 text-center md:text-left mb-8 md:mb-0">
+                <span class="text-4xl font-headline font-black text-secondary/30 mb-2 block">Today</span>
+                <h5 class="text-xl font-bold text-primary mb-3">Global Innovation Leader</h5>
+                <p class="text-on-surface-variant">Operating across 12 countries with over 200 architects of technology
+                  building the future.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CTA Section -->
+    <section class="py-32 bg-primary-container relative overflow-hidden">
+      <div
+        class="absolute top-0 right-0 w-1/2 h-full bg-secondary opacity-10 blur-[100px] rounded-full translate-x-1/2">
+      </div>
+      <div class="max-w-7xl mx-auto px-8 relative z-10">
+        <div class="max-w-3xl">
+          <h2 class="text-5xl md:text-7xl font-headline font-extrabold text-white mb-10 tracking-tighter">Build the next
+            <br /><span class="text-secondary-fixed">Masterpiece.</span></h2>
+          <p class="text-on-primary-container text-xl mb-12 leading-relaxed max-w-2xl">
+            Whether you are looking to join our world-class team of architects or seeking a partner for your next
+            significant venture, the door is open.
+          </p>
+          <div class="flex flex-wrap gap-6">
+            <button
+              class="bg-gradient-to-br from-secondary to-secondary-container text-white px-10 py-5 rounded-lg font-bold text-lg tracking-wide shadow-2xl hover:translate-y-[-2px] transition-all duration-300">
+              Join the Team
+            </button>
+            <button
+              class="bg-white/10 backdrop-blur-md text-white border border-white/20 px-10 py-5 rounded-lg font-bold text-lg tracking-wide hover:bg-white/20 transition-all duration-300">
+              Become a Partner
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer class="bg-[#f2f4f6] dark:bg-slate-900 w-full pt-20 pb-10">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto px-8 font-body text-sm antialiased">
+      <div class="md:col-span-1">
+        <a href="index.html"
+          class="text-xl font-bold text-[#002147] dark:text-white mb-6 block font-headline">Korventis</a>
+        <p class="text-slate-500 dark:text-slate-400 leading-relaxed">
+          Premium technology solutions for businesses that refuse to settle for the status quo. Global reach,
+          architectural precision.
+        </p>
+        <div class="mt-8 flex gap-4">
+          <span
+            class="material-symbols-outlined text-slate-400 hover:text-secondary cursor-pointer transition-colors">hub</span>
+          <span
+            class="material-symbols-outlined text-slate-400 hover:text-secondary cursor-pointer transition-colors">public</span>
+          <span
+            class="material-symbols-outlined text-slate-400 hover:text-secondary cursor-pointer transition-colors">terminal</span>
+        </div>
+      </div>
+      <div class="flex flex-col gap-4">
+        <h5 class="text-[#002147] dark:text-white font-bold mb-2 font-headline">Services</h5>
+        <a class="text-slate-500 dark:text-slate-400 hover:text-[#002147] dark:hover:text-white transition-opacity"
+          href="services.html">Web Development</a>
+        <a class="text-slate-500 dark:text-slate-400 hover:text-[#002147] dark:hover:text-white transition-opacity"
+          href="services.html">App Development</a>
+        <a class="text-slate-500 dark:text-slate-400 hover:text-[#002147] dark:hover:text-white transition-opacity"
+          href="services.html">SaaS Solutions</a>
+        <a class="text-slate-500 dark:text-slate-400 hover:text-[#002147] dark:hover:text-white transition-opacity"
+          href="services.html">SEO Strategy</a>
+      </div>
+      <div class="flex flex-col gap-4">
+        <h5 class="text-[#002147] dark:text-white font-bold mb-2 font-headline">Company</h5>
+        <a class="text-slate-500 dark:text-slate-400 hover:text-[#002147] dark:hover:text-white transition-opacity"
+          href="about.html">About Us</a>
+        <a class="text-slate-500 dark:text-slate-400 hover:text-[#002147] dark:hover:text-white transition-opacity"
+          href="portfolio.html">Portfolio</a>
+        <a class="text-slate-500 dark:text-slate-400 hover:text-[#002147] dark:hover:text-white transition-opacity"
+          href="blog.html">Blog</a>
+        <a class="text-slate-500 dark:text-slate-400 hover:text-[#002147] dark:hover:text-white transition-opacity"
+          href="contact.html">Contact</a>
+      </div>
+      <div class="flex flex-col gap-4">
+        <h5 class="text-[#002147] dark:text-white font-bold mb-2 font-headline">Get Started</h5>
+        <p class="text-slate-500 dark:text-slate-400 mb-2">Schedule a discovery call with our architectural leads.</p>
+        <a href="contact.html"
+          class="bg-primary-container text-white px-6 py-3 rounded-lg font-bold text-sm shadow-md hover:bg-secondary transition-colors text-center">
+          Get a Quote
+        </a>
+      </div>
+    </div>
+    <div
+      class="max-w-7xl mx-auto px-8 mt-20 pt-10 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center gap-6">
+      <div class="text-slate-500 dark:text-slate-400">© 2025 Korventis. All rights reserved.</div>
+      <div class="flex flex-wrap gap-8">
+        <a class="text-slate-500 dark:text-slate-400 hover:text-[#002147] dark:hover:text-white underline-offset-4 hover:underline"
+          href="privacy_policy.html">Privacy Policy</a>
+        <a class="text-slate-500 dark:text-slate-400 hover:text-[#002147] dark:hover:text-white underline-offset-4 hover:underline"
+          href="terms_of_service.html">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('mobile-menu-btn').addEventListener('click', function () {
+      const menu = document.getElementById('mobile-menu');
+      const icon = this.querySelector('.material-symbols-outlined');
+      menu.classList.toggle('hidden');
+      icon.textContent = menu.classList.contains('hidden') ? 'menu' : 'close';
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Korventis | Blog — Insights on Digital Architecture</title>
+    <meta name="description"
+        content="Explore Korventis insights on web trends, SaaS engineering, SEO strategies, and the future of digital architecture for enterprise technology." />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-error-container": "#93000a",
+                        "inverse-surface": "#2d3133",
+                        "on-secondary-container": "#fefcff",
+                        "tertiary-fixed-dim": "#b7c8e1",
+                        "surface-tint": "#465f88",
+                        "on-tertiary-fixed-variant": "#38485d",
+                        "secondary": "#0054cd",
+                        "outline-variant": "#c4c6cf",
+                        "outline": "#74777f",
+                        "tertiary-fixed": "#d3e4fe",
+                        "error": "#ba1a1a",
+                        "on-primary-fixed-variant": "#2d476f",
+                        "on-secondary-fixed": "#001847",
+                        "on-background": "#191c1e",
+                        "surface-container": "#eceef0",
+                        "inverse-primary": "#aec7f6",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-variant": "#e0e3e5",
+                        "primary": "#000a1e",
+                        "tertiary-container": "#122236",
+                        "on-primary": "#ffffff",
+                        "secondary-fixed-dim": "#b2c5ff",
+                        "on-primary-fixed": "#001b3d",
+                        "on-primary-container": "#708ab5",
+                        "error-container": "#ffdad6",
+                        "on-surface": "#191c1e",
+                        "surface-bright": "#f7f9fb",
+                        "surface-container-highest": "#e0e3e5",
+                        "inverse-on-surface": "#eff1f3",
+                        "secondary-container": "#316ee9",
+                        "primary-container": "#002147",
+                        "surface": "#f7f9fb",
+                        "on-tertiary-container": "#7a8aa2",
+                        "surface-container-high": "#e6e8ea",
+                        "primary-fixed-dim": "#aec7f6",
+                        "on-tertiary-fixed": "#0b1c30",
+                        "surface-dim": "#d8dadc",
+                        "surface-container-low": "#f2f4f6",
+                        "on-surface-variant": "#44474e",
+                        "on-secondary": "#ffffff",
+                        "tertiary": "#000b1b",
+                        "on-error": "#ffffff",
+                        "background": "#f7f9fb",
+                        "primary-fixed": "#d6e3ff",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed": "#dae2ff",
+                        "on-secondary-fixed-variant": "#0040a1"
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .action-blue-gradient {
+            background: linear-gradient(135deg, #0054cd 0%, #316ee9 100%);
+        }
+
+        .glass-nav {
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+
+<body class="bg-background text-on-surface font-body selection:bg-secondary/30">
+    <!-- TopNavBar -->
+    <nav
+        class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-[0_24px_48px_-12px_rgba(0,33,71,0.08)]">
+        <div class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20">
+            <a href="index.html"
+                class="text-2xl font-extrabold text-[#002147] dark:text-white tracking-tighter font-headline">
+                Korventis
+            </a>
+            <div class="hidden md:flex items-center gap-10">
+                <a class="text-slate-600 dark:text-slate-400 hover:text-[#0054cd] transition-colors duration-300 font-headline font-bold tracking-tight"
+                    href="index.html">Home</a>
+                <a class="text-slate-600 dark:text-slate-400 hover:text-[#0054cd] transition-colors duration-300 font-headline font-bold tracking-tight"
+                    href="about.html">About</a>
+                <a class="text-slate-600 dark:text-slate-400 hover:text-[#0054cd] transition-colors duration-300 font-headline font-bold tracking-tight"
+                    href="services.html">Services</a>
+                <a class="text-slate-600 dark:text-slate-400 hover:text-[#0054cd] transition-colors duration-300 font-headline font-bold tracking-tight"
+                    href="portfolio.html">Portfolio</a>
+                <a class="text-[#0054cd] dark:text-blue-400 border-b-2 border-[#0054cd] pb-1 font-headline font-bold tracking-tight"
+                    href="blog.html">Blog</a>
+                <a class="text-slate-600 dark:text-slate-400 hover:text-[#0054cd] transition-colors duration-300 font-headline font-bold tracking-tight"
+                    href="contact.html">Contact</a>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden flex items-center text-[#002147] dark:text-white">
+                <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+            <a href="contact.html"
+                class="hidden md:inline-block action-blue-gradient text-on-primary px-6 py-2.5 rounded-lg font-bold text-sm scale-95 active:opacity-80 transition-transform shadow-lg">
+                Get a Quote
+            </a>
+        </div>
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-white/95 dark:bg-slate-950/95 backdrop-blur-xl border-t border-outline-variant/10">
+            <div class="flex flex-col px-8 py-6 gap-4">
+                <a class="text-slate-600 dark:text-slate-400 font-headline font-bold tracking-tight"
+                    href="index.html">Home</a>
+                <a class="text-slate-600 dark:text-slate-400 font-headline font-bold tracking-tight"
+                    href="about.html">About</a>
+                <a class="text-slate-600 dark:text-slate-400 font-headline font-bold tracking-tight"
+                    href="services.html">Services</a>
+                <a class="text-slate-600 dark:text-slate-400 font-headline font-bold tracking-tight"
+                    href="portfolio.html">Portfolio</a>
+                <a class="text-[#0054cd] font-headline font-bold tracking-tight" href="blog.html">Blog</a>
+                <a class="text-slate-600 dark:text-slate-400 font-headline font-bold tracking-tight"
+                    href="contact.html">Contact</a>
+                <a href="contact.html"
+                    class="action-blue-gradient text-white px-6 py-2.5 rounded-lg font-bold text-sm text-center shadow-lg mt-2">Get
+                    a Quote</a>
+            </div>
+        </div>
+    </nav>
+    <main class="pt-32 pb-24">
+        <!-- Featured Article -->
+        <section class="max-w-7xl mx-auto px-8 mb-24">
+            <div
+                class="relative group overflow-hidden rounded-xl bg-surface-container-low min-h-[600px] flex items-end">
+                <div class="absolute inset-0 z-0">
+                    <img alt="Featured Tech Insights"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        data-alt="Futuristic digital network interface with glowing blue lines and data points against a dark technological background"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqqIab9iFiQIoCY3DACSdsiQdSamvKcYesJNN1MHnV9U-57j1lqebtF6SLxpAp33qqKW_hjWMHiuXieO-8-JQRzVQ04qHqfw9vYJjit5l_jOMlbbyOcwET31hmA2DDTqyVRxnDKPeLCaMSwFzKVbmfVImrGcpGMvgnrDxUfOIsIX7CTCVXWVhTs16oXSrjQvIHgOKqYN_eG8i7sK5ROH8lrBtw9bRYbBK5WIAfV5-taRhcGgiSfgdAJMJf9Lab5A907Gy1iORBy8s" />
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-primary-container via-primary-container/40 to-transparent">
+                    </div>
+                </div>
+                <div class="relative z-10 p-12 md:p-16 max-w-3xl">
+                    <span
+                        class="inline-block px-3 py-1 rounded bg-secondary text-white text-[10px] font-bold tracking-[0.15em] uppercase mb-6">Featured
+                        Insight</span>
+                    <h1
+                        class="text-white font-headline text-4xl md:text-6xl font-extrabold tracking-tighter leading-tight mb-6">
+                        The Architecture of Innovation: How Korventis Redefines Scalability
+                    </h1>
+                    <p class="text-on-primary-container text-lg mb-8 max-w-2xl font-light">
+                        Discover the engineering principles driving the next generation of enterprise software and why
+                        architectural integrity is the cornerstone of digital transformation.
+                    </p>
+                    <div class="flex items-center gap-6">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-slate-200 overflow-hidden">
+                                <img alt="Author"
+                                    data-alt="Professional headshot of a male software architect with a modern, high-end editorial look"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBju7SzO3mcEJMmI5uHrL-2uTEgnN8iESS0PYuU5giE63anZf3ZrifOSzr6jPSxM-gRB9wCad3qY7C4VL5Ma5vr0tb09jNZDtQ7_EL00Oz8l0FVD721JYOTZVcKLXQHL41poGqH3OzRhePlqCKyYuYIPt2282UgWj3Cm8txPGsHNRm2U7UeKG92YG_cOBkZOpbGmqdrKQ9oQ8ccLxMyTc7gjcrSkvIFfgTnBGO9FnejWz9vzHl_8D9I9tsHpgXot09_gZPxUpCQo_0" />
+                            </div>
+                            <span class="text-white font-medium">David Korven</span>
+                        </div>
+                        <span class="text-on-primary-container/60">•</span>
+                        <span class="text-on-primary-container/60">12 Min Read</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Blog Feed & Sidebar -->
+        <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-16">
+            <!-- Main Content Grid -->
+            <div class="lg:col-span-8">
+                <div class="flex flex-col gap-16">
+                    <!-- Post 1: 2024 Web Trends -->
+                    <article class="grid md:grid-cols-2 gap-8 items-center group">
+                        <div class="aspect-video overflow-hidden rounded-xl bg-surface-container-low">
+                            <img alt="2024 Web Trends"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="Abstract minimalist 3D shapes in monochrome blue and grey, clean editorial tech style"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcTn-WvfjxmKhBoQDLhomaRYxSLveo0kqxcp_LSXPBwZ5D-ukyxBc7MMAGZk43KhPCgh-ftE7_aUGfEV0EcRFwnvdM3sfrHsEuK9erCV9PuCyGszkW44xMDFynrhCtuXBHMbjvq53qXVoReZ8ad1k9OTgCLv0JasA8oXFufoIMIKNUeoSn0DjHvj7w4iQ2YfYI1rjhXGz8DVE46QuZpL64MyVQBwFC52nuaTiNZ_3rXTK6CAVS1s3jAPjfiAzB70Q4QQKRHJVKDZo" />
+                        </div>
+                        <div>
+                            <span
+                                class="text-secondary font-bold text-[10px] tracking-widest uppercase mb-2 block">Industry
+                                Trends</span>
+                            <h2
+                                class="text-2xl font-headline font-bold text-primary mb-4 leading-snug group-hover:text-secondary transition-colors">
+                                2024 Web Trends: The Shift Towards Hyper-Personalization
+                            </h2>
+                            <p class="text-on-surface-variant text-sm mb-6 line-clamp-3">
+                                From AI-driven interfaces to the resurgence of bold typography, we explore the aesthetic
+                                and functional shifts defining the web this year.
+                            </p>
+                            <a class="inline-flex items-center gap-2 text-secondary font-bold text-sm group/link"
+                                href="#">
+                                Read Article
+                                <span
+                                    class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform"
+                                    data-icon="arrow_forward">arrow_forward</span>
+                            </a>
+                        </div>
+                    </article>
+                    <!-- Post 2: The Power of Custom SaaS -->
+                    <article class="grid md:grid-cols-2 gap-8 items-center group">
+                        <div class="aspect-video overflow-hidden rounded-xl bg-surface-container-low md:order-2">
+                            <img alt="Custom SaaS"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="Modern clean workspace with a laptop displaying complex data visualization charts in a soft-lit environment"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCysVhht5ZUa0-Z4DnoYdt7Fx9aoUb5WQzxyuLOCKl6jsRb6sAZbFAh_UwOS4d0vd1A4WJY4hg4DDbMZFOk71McdIamxv0axcsVdvcC1K3LT8ZPscKi7AkhR1xt2yUEwqhS57gKua_N5DYkaXCLERRe37PXSvZaBP2hUUlf7b3ofHOl1UaREpdzDuaSIDjmulj8z8Sq6Gy6utHqf2oqxi6M6cjPyZMo1Gk0z3vPKGcRGtpVvRG8Zk3hPHmjT-b7cNK70v3AKd-r3z4" />
+                        </div>
+                        <div class="md:order-1">
+                            <span
+                                class="text-secondary font-bold text-[10px] tracking-widest uppercase mb-2 block">Engineering</span>
+                            <h2
+                                class="text-2xl font-headline font-bold text-primary mb-4 leading-snug group-hover:text-secondary transition-colors">
+                                The Power of Custom SaaS: Beyond Off-the-Shelf Solutions
+                            </h2>
+                            <p class="text-on-surface-variant text-sm mb-6 line-clamp-3">
+                                Why enterprise giants are abandoning generic software for custom-milled internal tools
+                                that drive actual competitive advantage.
+                            </p>
+                            <a class="inline-flex items-center gap-2 text-secondary font-bold text-sm group/link"
+                                href="#">
+                                Read Article
+                                <span
+                                    class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform"
+                                    data-icon="arrow_forward">arrow_forward</span>
+                            </a>
+                        </div>
+                    </article>
+                    <!-- Post 3: Improving SEO for Tech Companies -->
+                    <article class="grid md:grid-cols-2 gap-8 items-center group">
+                        <div class="aspect-video overflow-hidden rounded-xl bg-surface-container-low">
+                            <img alt="SEO Tech"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="Close up of a sleek computer screen showing search engine rankings and SEO analytics in a professional setting"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAzHvM83fZlnXp7jZa4OVCNPrTO3yotDSMrDDesrnBZK8ySuoygC7vOvZW3W_ztWJr6OlVmDmJtAb4vGzKr6gqu9I2hMJJfZhjkt9Qc5EJKOKI_QrBMz6CqGB689V6PjjUl7UicI3q1maFKMjWEQMmoVkp4IeEFWeXe0HOAE_DQRBaJHrVfVZcAF1lNQiHvOe7ml8P0SBjC3-Z-UJZyMYlFPHON01gE-QmcBYoTKAvEq0vPzz_d_LisyEfqLLCZCrClHLHaHmK0mg" />
+                        </div>
+                        <div>
+                            <span
+                                class="text-secondary font-bold text-[10px] tracking-widest uppercase mb-2 block">Growth
+                                Strategy</span>
+                            <h2
+                                class="text-2xl font-headline font-bold text-primary mb-4 leading-snug group-hover:text-secondary transition-colors">
+                                Improving SEO for Tech Companies: The Technical Blueprint
+                            </h2>
+                            <p class="text-on-surface-variant text-sm mb-6 line-clamp-3">
+                                Content isn't just king—structure is the crown. Learn how Core Web Vitals and semantic
+                                HTML impact your ranking in high-competition tech niches.
+                            </p>
+                            <a class="inline-flex items-center gap-2 text-secondary font-bold text-sm group/link"
+                                href="#">
+                                Read Article
+                                <span
+                                    class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform"
+                                    data-icon="arrow_forward">arrow_forward</span>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+                <div class="mt-20 flex justify-center">
+                    <button
+                        class="px-8 py-3 rounded-lg border border-outline-variant/30 text-primary font-bold text-sm hover:bg-surface-container-low transition-colors">
+                        Load More Articles
+                    </button>
+                </div>
+            </div>
+            <!-- Sidebar -->
+            <aside class="lg:col-span-4 flex flex-col gap-12">
+                <!-- Search -->
+                <div class="bg-surface-container-low p-8 rounded-xl">
+                    <h3 class="font-headline font-bold text-lg mb-6">Search</h3>
+                    <div class="relative">
+                        <span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline"
+                            data-icon="search">search</span>
+                        <input
+                            class="w-full pl-12 pr-4 py-3 bg-surface-container-lowest border-none focus:ring-2 focus:ring-secondary/20 rounded-lg text-sm transition-all"
+                            placeholder="Topics, keywords..." type="text" />
+                    </div>
+                </div>
+                <!-- Categories -->
+                <div class="bg-surface-container-low p-8 rounded-xl">
+                    <h3 class="font-headline font-bold text-lg mb-6">Categories</h3>
+                    <ul class="flex flex-col gap-4">
+                        <li>
+                            <a class="flex justify-between items-center group py-1" href="#">
+                                <span
+                                    class="text-on-surface-variant group-hover:text-secondary transition-colors">Digital
+                                    Strategy</span>
+                                <span class="text-xs font-bold text-outline-variant">12</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="flex justify-between items-center group py-1" href="#">
+                                <span
+                                    class="text-on-surface-variant group-hover:text-secondary transition-colors">Software
+                                    Engineering</span>
+                                <span class="text-xs font-bold text-outline-variant">08</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="flex justify-between items-center group py-1" href="#">
+                                <span class="text-on-surface-variant group-hover:text-secondary transition-colors">AI
+                                    &amp; Machine Learning</span>
+                                <span class="text-xs font-bold text-outline-variant">15</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="flex justify-between items-center group py-1" href="#">
+                                <span class="text-on-surface-variant group-hover:text-secondary transition-colors">UX
+                                    Research</span>
+                                <span class="text-xs font-bold text-outline-variant">05</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="flex justify-between items-center group py-1" href="#">
+                                <span
+                                    class="text-on-surface-variant group-hover:text-secondary transition-colors">Cybersecurity</span>
+                                <span class="text-xs font-bold text-outline-variant">10</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Newsletter -->
+                <div class="bg-primary-container p-8 rounded-xl text-white">
+                    <span class="material-symbols-outlined text-secondary text-3xl mb-4" data-icon="mail"
+                        data-weight="fill">mail</span>
+                    <h3 class="font-headline font-bold text-xl mb-4">Korventis Intelligence</h3>
+                    <p class="text-on-primary-container text-sm mb-6 leading-relaxed">
+                        Join 5,000+ tech leaders receiving our weekly analysis of the digital landscape. No fluff, just
+                        architecture.
+                    </p>
+                    <form class="flex flex-col gap-3">
+                        <input
+                            class="w-full px-4 py-3 bg-white/10 border-none rounded-lg text-sm text-white placeholder:text-white/40 focus:ring-1 focus:ring-secondary"
+                            placeholder="email@company.com" type="email" />
+                        <button class="action-blue-gradient w-full py-3 rounded-lg font-bold text-sm shadow-xl">
+                            Subscribe
+                        </button>
+                    </form>
+                    <p class="text-[10px] text-on-primary-container/40 mt-4 text-center">
+                        Secure subscription. Unsubscribe at any time.
+                    </p>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-[#f2f4f6] dark:bg-slate-900 w-full pt-20 pb-10">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto px-8 font-body text-sm antialiased">
+            <div class="md:col-span-1">
+                <a href="index.html"
+                    class="text-xl font-bold text-[#002147] dark:text-white mb-6 block font-headline tracking-tighter">Korventis</a>
+                <p class="text-slate-500 dark:text-slate-400 leading-relaxed">
+                    Premium technology solutions for businesses that refuse to settle for the status quo. Global reach,
+                    architectural precision.
+                </p>
+            </div>
+            <div class="flex flex-col gap-4">
+                <h5 class="text-[#002147] dark:text-white font-bold mb-2 font-headline">Services</h5>
+                <a class="text-slate-500 dark:text-slate-400 hover:text-[#002147] dark:hover:text-white transition-opacity"
+                    href="services.html">Web Development</a>
+                <a class="text-slate-500 dark:text-slate-400 hover:text-[#002147] dark:hover:text-white transition-opacity"
+                    href="services.html">App Development</a>
+                <a class="text-slate-500 dark:text-slate-400 hover:text-[#002147] dark:hover:text-white transition-opacity"
+                    href="services.html">SaaS Solutions</a>
+                <a class="text-slate-500 dark:text-slate-400 hover:text-[#002147] dark:hover:text-white transition-opacity"
+                    href="services.html">SEO Strategy</a>
+            </div>
+            <div class="flex flex-col gap-4">
+                <h5 class="text-[#002147] dark:text-white font-bold mb-2 font-headline">Company</h5>
+                <a class="text-slate-500 dark:text-slate-400 hover:text-[#002147] dark:hover:text-white transition-opacity"
+                    href="about.html">About Us</a>
+                <a class="text-slate-500 dark:text-slate-400 hover:text-[#002147] dark:hover:text-white transition-opacity"
+                    href="portfolio.html">Portfolio</a>
+                <a class="text-slate-500 dark:text-slate-400 hover:text-[#002147] dark:hover:text-white transition-opacity"
+                    href="blog.html">Blog</a>
+                <a class="text-slate-500 dark:text-slate-400 hover:text-[#002147] dark:hover:text-white transition-opacity"
+                    href="contact.html">Contact</a>
+            </div>
+            <div class="flex flex-col gap-4">
+                <h5 class="text-[#002147] dark:text-white font-bold mb-2 font-headline">Get Started</h5>
+                <p class="text-slate-500 dark:text-slate-400 mb-2">Schedule a discovery call with our architectural
+                    leads.</p>
+                <a href="contact.html"
+                    class="bg-primary-container text-white px-6 py-3 rounded-lg font-bold text-sm shadow-md hover:bg-secondary transition-colors text-center">
+                    Get a Quote
+                </a>
+            </div>
+        </div>
+        <div
+            class="max-w-7xl mx-auto px-8 mt-20 pt-10 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-slate-500 dark:text-slate-400">© 2025 Korventis. All rights reserved.</div>
+            <div class="flex flex-wrap gap-8">
+                <a class="text-slate-500 dark:text-slate-400 hover:text-[#002147] dark:hover:text-white underline-offset-4 hover:underline"
+                    href="privacy_policy.html">Privacy Policy</a>
+                <a class="text-slate-500 dark:text-slate-400 hover:text-[#002147] dark:hover:text-white underline-offset-4 hover:underline"
+                    href="terms_of_service.html">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', function () {
+            const menu = document.getElementById('mobile-menu');
+            const icon = this.querySelector('.material-symbols-outlined');
+            menu.classList.toggle('hidden');
+            icon.textContent = menu.classList.contains('hidden') ? 'menu' : 'close';
+        });
+    </script>
+</body>
+
+</html>

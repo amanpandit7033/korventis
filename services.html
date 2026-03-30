@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth light" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Services | Korventis</title>
+  <meta name="description"
+    content="Korventis delivers cutting-edge web development, mobile apps, SaaS products, custom software, and strategic SEO for enterprise clients worldwide." />
+  <!-- Google Fonts: Manrope & Inter -->
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@700;800&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Material Symbols -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-error-container": "#93000a",
+            "inverse-surface": "#2d3133",
+            "on-secondary-container": "#fefcff",
+            "tertiary-fixed-dim": "#b7c8e1",
+            "surface-tint": "#465f88",
+            "on-tertiary-fixed-variant": "#38485d",
+            "secondary": "#0054cd",
+            "outline-variant": "#c4c6cf",
+            "outline": "#74777f",
+            "tertiary-fixed": "#d3e4fe",
+            "error": "#ba1a1a",
+            "on-primary-fixed-variant": "#2d476f",
+            "on-secondary-fixed": "#001847",
+            "on-background": "#191c1e",
+            "surface-container": "#eceef0",
+            "inverse-primary": "#aec7f6",
+            "surface-container-lowest": "#ffffff",
+            "surface-variant": "#e0e3e5",
+            "primary": "#000a1e",
+            "tertiary-container": "#122236",
+            "on-primary": "#ffffff",
+            "secondary-fixed-dim": "#b2c5ff",
+            "on-primary-fixed": "#001b3d",
+            "on-primary-container": "#708ab5",
+            "error-container": "#ffdad6",
+            "on-surface": "#191c1e",
+            "surface-bright": "#f7f9fb",
+            "surface-container-highest": "#e0e3e5",
+            "inverse-on-surface": "#eff1f3",
+            "secondary-container": "#316ee9",
+            "primary-container": "#002147",
+            "surface": "#f7f9fb",
+            "on-tertiary-container": "#7a8aa2",
+            "surface-container-high": "#e6e8ea",
+            "primary-fixed-dim": "#aec7f6",
+            "on-tertiary-fixed": "#0b1c30",
+            "surface-dim": "#d8dadc",
+            "surface-container-low": "#f2f4f6",
+            "on-surface-variant": "#44474e",
+            "on-secondary": "#ffffff",
+            "tertiary": "#000b1b",
+            "on-error": "#ffffff",
+            "background": "#f7f9fb",
+            "primary-fixed": "#d6e3ff",
+            "on-tertiary": "#ffffff",
+            "secondary-fixed": "#dae2ff",
+            "on-secondary-fixed-variant": "#0040a1"
+          },
+          fontFamily: {
+            "headline": ["Manrope"],
+            "body": ["Inter"],
+            "label": ["Inter"]
+          },
+          borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" },
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+
+    .glass-nav {
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+  </style>
+</head>
+
+<body class="bg-background font-body text-on-surface antialiased">
+  <!-- TopNavBar -->
+  <nav
+    class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-[0_24px_48px_-12px_rgba(0,33,71,0.08)]">
+    <div class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20">
+      <a href="index.html"
+        class="text-2xl font-extrabold text-[#002147] dark:text-white tracking-tighter font-headline">
+        Korventis
+      </a>
+      <div class="hidden md:flex items-center gap-10">
+        <a class="text-slate-600 dark:text-slate-400 hover:text-[#0054cd] transition-colors duration-300 font-headline font-bold tracking-tight"
+          href="index.html">Home</a>
+        <a class="text-slate-600 dark:text-slate-400 hover:text-[#0054cd] transition-colors duration-300 font-headline font-bold tracking-tight"
+          href="about.html">About</a>
+        <a class="text-[#0054cd] dark:text-blue-400 border-b-2 border-[#0054cd] pb-1 font-headline font-bold tracking-tight"
+          href="services.html">Services</a>
+        <a class="text-slate-600 dark:text-slate-400 hover:text-[#0054cd] transition-colors duration-300 font-headline font-bold tracking-tight"
+          href="portfolio.html">Portfolio</a>
+        <a class="text-slate-600 dark:text-slate-400 hover:text-[#0054cd] transition-colors duration-300 font-headline font-bold tracking-tight"
+          href="blog.html">Blog</a>
+        <a class="text-slate-600 dark:text-slate-400 hover:text-[#0054cd] transition-colors duration-300 font-headline font-bold tracking-tight"
+          href="contact.html">Contact</a>
+      </div>
+      <button id="mobile-menu-btn" class="md:hidden flex items-center text-[#002147] dark:text-white">
+        <span class="material-symbols-outlined text-3xl">menu</span>
+      </button>
+      <a href="contact.html"
+        class="hidden md:inline-block bg-gradient-to-br from-secondary to-secondary-container text-white px-6 py-2.5 rounded-lg font-bold text-sm scale-95 active:opacity-80 transition-transform shadow-lg">
+        Get a Quote
+      </a>
+    </div>
+    <div id="mobile-menu"
+      class="hidden md:hidden bg-white/95 dark:bg-slate-950/95 backdrop-blur-xl border-t border-outline-variant/10">
+      <div class="flex flex-col px-8 py-6 gap-4">
+        <a class="text-slate-600 dark:text-slate-400 font-headline font-bold tracking-tight" href="index.html">Home</a>
+        <a class="text-slate-600 dark:text-slate-400 font-headline font-bold tracking-tight" href="about.html">About</a>
+        <a class="text-[#0054cd] font-headline font-bold tracking-tight" href="services.html">Services</a>
+        <a class="text-slate-600 dark:text-slate-400 font-headline font-bold tracking-tight"
+          href="portfolio.html">Portfolio</a>
+        <a class="text-slate-600 dark:text-slate-400 font-headline font-bold tracking-tight" href="blog.html">Blog</a>
+        <a class="text-slate-600 dark:text-slate-400 font-headline font-bold tracking-tight"
+          href="contact.html">Contact</a>
+        <a href="contact.html"
+          class="bg-gradient-to-br from-secondary to-secondary-container text-white px-6 py-2.5 rounded-lg font-bold text-sm text-center shadow-lg mt-2">Get
+          a Quote</a>
+      </div>
+    </div>
+  </nav>
+  <!-- Hero Section -->
+  <header class="pt-40 pb-20 px-8 max-w-7xl mx-auto">
+    <div class="max-w-3xl">
+      <span class="text-xs font-bold tracking-[0.15em] text-secondary uppercase block mb-4 font-label">Our
+        Capabilities</span>
+      <h1 class="text-5xl md:text-7xl font-extrabold text-primary-container tracking-tighter font-headline mb-8">
+        Engineering the <br /><span class="text-secondary">Digital Future</span>.
+      </h1>
+      <p class="text-xl text-on-surface-variant leading-relaxed max-w-2xl font-body">
+        We deliver high-performance technological solutions that empower industry leaders to scale, innovate, and
+        dominate their digital landscape.
+      </p>
+    </div>
+  </header>
+  <!-- Services Grid: Alternating Layout -->
+  <section class="px-8 pb-32 max-w-7xl mx-auto space-y-32">
+    <!-- Service 1: Website Development -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+      <div class="order-2 md:order-1">
+        <div class="w-16 h-16 bg-surface-container-high rounded-full flex items-center justify-center mb-8">
+          <span class="material-symbols-outlined text-secondary text-3xl">language</span>
+        </div>
+        <h2 class="text-3xl font-bold text-primary-container font-headline mb-4">Website Development</h2>
+        <p class="text-lg text-on-surface-variant font-body mb-6 leading-relaxed">
+          Custom, responsive designs tailored to your brand identity. We build high-conversion digital hubs that
+          prioritize user experience and lightning-fast performance across all modern devices.
+        </p>
+        <ul class="space-y-3 text-on-surface-variant font-medium">
+          <li class="flex items-center gap-3"><span
+              class="material-symbols-outlined text-secondary text-sm">check_circle</span> Responsive Architecture</li>
+          <li class="flex items-center gap-3"><span
+              class="material-symbols-outlined text-secondary text-sm">check_circle</span> UI/UX Optimization</li>
+          <li class="flex items-center gap-3"><span
+              class="material-symbols-outlined text-secondary text-sm">check_circle</span> CMS Integration</li>
+        </ul>
+      </div>
+      <div class="order-1 md:order-2 rounded-2xl overflow-hidden shadow-2xl bg-surface-container-low aspect-video">
+        <img alt="Web development" class="w-full h-full object-cover"
+          data-alt="Modern minimalist workspace with high-end laptop displaying abstract code and clean web design interface on screen"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4UAOGghMjJDBbxQidoL6xGCnvqo-oSKi-1hc6ZLbguRmEN6-VWTA_CRMnPWdYMhd2yeuEOaMvDSOC4zH6JO7NNveNLCrzmj-6bcNMtR-EfgMX8EeogZ_sdwoq_39h4djXsCk1iFsdF0zdJSbnWU6LXBrH5ctFzsigjpP5idD7Dki1cmlZPs4vJgCk6FnOHj6MsVyA1kgEtSGBUBL9YCpV3ZeyKxOShI8k44vHftpKEWfUQTsmoOcj0cl4cfTZtVH-7Noro0MEtKU" />
+      </div>
+    </div>
+    <!-- Service 2: Mobile App Development -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+      <div class="rounded-2xl overflow-hidden shadow-2xl bg-surface-container-low aspect-video">
+        <img alt="Mobile app development" class="w-full h-full object-cover"
+          data-alt="Close-up of a high-resolution smartphone held in hand showing sleek mobile application UI with vibrant blue accents"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxKnWHZCn3tfdLAU--2gQ4zEX5c_vqa51EE37agtHKMOw2fiUY6rPfcpyM_5xBIeCMewWRGVqmBzLErqbfauDV_Uhqn4rPo5LvUeFNWNYAzdZTBAX1b8_rTB95Yzz2f32S0s_7oFb549urBE1caMf2y9hrqfaJq9RtjXPU0_VuqNmxVwaGwL5axagHxdITvAPLvPn7-htnTxaLLfu74tftxE0kW4pTPcAqHdofvHJVHFKNJjB-mc2HV6EZOV-SlsEDC0Xw6_qucrM" />
+      </div>
+      <div>
+        <div class="w-16 h-16 bg-surface-container-high rounded-full flex items-center justify-center mb-8">
+          <span class="material-symbols-outlined text-secondary text-3xl">smartphone</span>
+        </div>
+        <h2 class="text-3xl font-bold text-primary-container font-headline mb-4">Mobile App Development</h2>
+        <p class="text-lg text-on-surface-variant font-body mb-6 leading-relaxed">
+          Native and cross-platform iOS and Android applications. We transform complex workflows into intuitive mobile
+          experiences that keep users engaged and your business accessible.
+        </p>
+        <ul class="space-y-3 text-on-surface-variant font-medium">
+          <li class="flex items-center gap-3"><span
+              class="material-symbols-outlined text-secondary text-sm">check_circle</span> iOS &amp; Android Native</li>
+          <li class="flex items-center gap-3"><span
+              class="material-symbols-outlined text-secondary text-sm">check_circle</span> React Native &amp; Flutter
+          </li>
+          <li class="flex items-center gap-3"><span
+              class="material-symbols-outlined text-secondary text-sm">check_circle</span> Biometric Integration</li>
+        </ul>
+      </div>
+    </div>
+    <!-- Service 3: SaaS Products -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+      <div class="order-2 md:order-1">
+        <div class="w-16 h-16 bg-surface-container-high rounded-full flex items-center justify-center mb-8">
+          <span class="material-symbols-outlined text-secondary text-3xl">cloud_sync</span>
+        </div>
+        <h2 class="text-3xl font-bold text-primary-container font-headline mb-4">SaaS Products</h2>
+        <p class="text-lg text-on-surface-variant font-body mb-6 leading-relaxed">
+          Scalable cloud solutions built for the modern enterprise. We architect multi-tenant platforms designed to grow
+          with your user base while maintaining peak performance and security.
+        </p>
+        <ul class="space-y-3 text-on-surface-variant font-medium">
+          <li class="flex items-center gap-3"><span
+              class="material-symbols-outlined text-secondary text-sm">check_circle</span> Cloud Native Architecture
+          </li>
+          <li class="flex items-center gap-3"><span
+              class="material-symbols-outlined text-secondary text-sm">check_circle</span> API-First Strategy</li>
+          <li class="flex items-center gap-3"><span
+              class="material-symbols-outlined text-secondary text-sm">check_circle</span> Automated Scaling</li>
+        </ul>
+      </div>
+      <div class="order-1 md:order-2 rounded-2xl overflow-hidden shadow-2xl bg-surface-container-low aspect-video">
+        <img alt="SaaS Cloud" class="w-full h-full object-cover"
+          data-alt="Digital network visualization with glowing data points and lines representing global cloud connectivity and SaaS infrastructure"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0qnInFSiIDNXEE522gEP1DXIGZQFIMueWBlp7Gpnk_k_k-8sahZCNG8lq9lQ7CiSwVxqC-0JKrBWmZCPuvAYdtKhYlP8F-f3kxl0r1QJ_0pUlVd83eXE6FA4hwcXEgYtzPD5FI3bZzcLUDOs5iQWEPcdzAD9nMvm6rlNgyjxep1N-gdNEXIGOQgp_MrlaE1_YJPciWlSGvzZ2_e9GADoFs_6pYlVNcoVZ7VALwqUebb2i38_Lcbm3uzus81na2ptzzrqvLlKAlXc" />
+      </div>
+    </div>
+    <!-- Service 4: Software Development -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+      <div class="rounded-2xl overflow-hidden shadow-2xl bg-surface-container-low aspect-video">
+        <img alt="Enterprise Software" class="w-full h-full object-cover"
+          data-alt="High-contrast shot of monitor screen showing complex backend source code with syntax highlighting in a dark room"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuAk2959nHztgyJqwwAiprkaoGXbwj7rEhGdzWkCB5ZCZPBIuy3zcueTe1hjXy4d7EQep5wzai_RrZ4qFa9BRlbmyRwofa6i8My8eMlMAj2Bjfpmb8FOVlw3sm0RDvjZLACGdfQpPb1hR75H5NvCudheN_kVgcTcLLge7crUMPDPCHm0q8EMCUgPp7o-v2hiQ-2bJKlDgE7zpnL_dGS9maleFip6P5yw4TaS7FHpdHwxFAYOBEoaDh8AsvEFjNb1ysFrA2nlEaAajcY" />
+      </div>
+      <div>
+        <div class="w-16 h-16 bg-surface-container-high rounded-full flex items-center justify-center mb-8">
+          <span class="material-symbols-outlined text-secondary text-3xl">terminal</span>
+        </div>
+        <h2 class="text-3xl font-bold text-primary-container font-headline mb-4">Software Development</h2>
+        <p class="text-lg text-on-surface-variant font-body mb-6 leading-relaxed">
+          Enterprise-grade software tailored to solve unique business challenges. From legacy modernization to bespoke
+          internal tools, we build the engine that drives your productivity.
+        </p>
+        <ul class="space-y-3 text-on-surface-variant font-medium">
+          <li class="flex items-center gap-3"><span
+              class="material-symbols-outlined text-secondary text-sm">check_circle</span> Custom CRM &amp; ERP</li>
+          <li class="flex items-center gap-3"><span
+              class="material-symbols-outlined text-secondary text-sm">check_circle</span> Legacy System Integration
+          </li>
+          <li class="flex items-center gap-3"><span
+              class="material-symbols-outlined text-secondary text-sm">check_circle</span> High-Security Protocols</li>
+        </ul>
+      </div>
+    </div>
+    <!-- Service 5: SEO -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+      <div class="order-2 md:order-1">
+        <div class="w-16 h-16 bg-surface-container-high rounded-full flex items-center justify-center mb-8">
+          <span class="material-symbols-outlined text-secondary text-3xl">monitoring</span>
+        </div>
+        <h2 class="text-3xl font-bold text-primary-container font-headline mb-4">Strategic SEO</h2>
+        <p class="text-lg text-on-surface-variant font-body mb-6 leading-relaxed">
+          Search engine optimization that delivers measurable ROI. We use data-driven strategies to increase your
+          visibility, drive organic traffic, and secure your place at the top of search results.
+        </p>
+        <ul class="space-y-3 text-on-surface-variant font-medium">
+          <li class="flex items-center gap-3"><span
+              class="material-symbols-outlined text-secondary text-sm">check_circle</span> Technical SEO Audits</li>
+          <li class="flex items-center gap-3"><span
+              class="material-symbols-outlined text-secondary text-sm">check_circle</span> Semantic Keyword Strategy
+          </li>
+          <li class="flex items-center gap-3"><span
+              class="material-symbols-outlined text-secondary text-sm">check_circle</span> Backlink Engineering</li>
+        </ul>
+      </div>
+      <div class="order-1 md:order-2 rounded-2xl overflow-hidden shadow-2xl bg-surface-container-low aspect-video">
+        <img alt="SEO Data" class="w-full h-full object-cover"
+          data-alt="Modern analytics dashboard on a large screen displaying growth charts, metrics, and data visualizations in shades of blue"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrPC8a1U3jIzxSMAqvCDqQLzzY3EFO_4v_Mk1E287p6cEvAVhYjH3o8M59zz5S4kbgrdUrEXN7jC9OmOpCstYayWmwsy-od-StOIxqPDpP3TLoXd8wq75p-Rd0-1fzRPH1Ry5LRB8b3g1LKBP3K1VIDLTRShMvhzrYwEeok_JM-8racL2gkWTZ2xCLTrf8xdAFQSBZ1au0AknWiDKFXb_3IFNfC5Y_VmLksArRzrp6BPqFFSMq7j6hB1xUx2_iKJUfI0W8N0blmMA" />
+      </div>
+    </div>
+  </section>
+  <!-- Call to Action -->
+  <section class="max-w-7xl mx-auto px-8 pb-32">
+    <div class="bg-primary-container rounded-[2rem] p-12 md:p-24 text-center relative overflow-hidden">
+      <!-- Decorative Accent -->
+      <div class="absolute top-0 right-0 w-64 h-64 bg-secondary/10 rounded-full blur-3xl -mr-32 -mt-32"></div>
+      <div class="absolute bottom-0 left-0 w-64 h-64 bg-secondary/10 rounded-full blur-3xl -ml-32 -mb-32"></div>
+      <div class="relative z-10 max-w-2xl mx-auto">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-white font-headline mb-6 tracking-tight">Ready to transform
+          your vision into reality?</h2>
+        <p class="text-on-primary-container text-lg mb-10 font-body">
+          Partner with Korventis for industry-leading engineering and strategic design. Let's build something
+          exceptional together.
+        </p>
+        <button
+          class="bg-gradient-to-br from-secondary to-secondary-container text-white px-10 py-5 rounded-xl font-bold text-lg hover:shadow-xl hover:shadow-secondary/20 transition-all duration-300 transform hover:-translate-y-1">
+          Start Your Project
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-[#f2f4f6] dark:bg-slate-900 w-full pt-20 pb-10">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto px-8 font-body text-sm antialiased">
+      <div class="md:col-span-1">
+        <a href="index.html"
+          class="text-xl font-bold text-[#002147] dark:text-white mb-6 block font-headline">Korventis</a>
+        <p class="text-slate-500 dark:text-slate-400 leading-relaxed">
+          Premium technology solutions for businesses that refuse to settle for the status quo. Global reach,
+          architectural precision.
+        </p>
+        <div class="mt-8 flex gap-4">
+          <span
+            class="material-symbols-outlined text-slate-400 hover:text-secondary cursor-pointer transition-colors">hub</span>
+          <span
+            class="material-symbols-outlined text-slate-400 hover:text-secondary cursor-pointer transition-colors">public</span>
+          <span
+            class="material-symbols-outlined text-slate-400 hover:text-secondary cursor-pointer transition-colors">terminal</span>
+        </div>
+      </div>
+      <div class="flex flex-col gap-4">
+        <h5 class="text-[#002147] dark:text-white font-bold mb-2 font-headline">Services</h5>
+        <a class="text-slate-500 dark:text-slate-400 hover:text-[#002147] dark:hover:text-white transition-opacity"
+          href="services.html">Web Development</a>
+        <a class="text-slate-500 dark:text-slate-400 hover:text-[#002147] dark:hover:text-white transition-opacity"
+          href="services.html">App Development</a>
+        <a class="text-slate-500 dark:text-slate-400 hover:text-[#002147] dark:hover:text-white transition-opacity"
+          href="services.html">SaaS Solutions</a>
+        <a class="text-slate-500 dark:text-slate-400 hover:text-[#002147] dark:hover:text-white transition-opacity"
+          href="services.html">SEO Strategy</a>
+      </div>
+      <div class="flex flex-col gap-4">
+        <h5 class="text-[#002147] dark:text-white font-bold mb-2 font-headline">Company</h5>
+        <a class="text-slate-500 dark:text-slate-400 hover:text-[#002147] dark:hover:text-white transition-opacity"
+          href="about.html">About Us</a>
+        <a class="text-slate-500 dark:text-slate-400 hover:text-[#002147] dark:hover:text-white transition-opacity"
+          href="portfolio.html">Portfolio</a>
+        <a class="text-slate-500 dark:text-slate-400 hover:text-[#002147] dark:hover:text-white transition-opacity"
+          href="blog.html">Blog</a>
+        <a class="text-slate-500 dark:text-slate-400 hover:text-[#002147] dark:hover:text-white transition-opacity"
+          href="contact.html">Contact</a>
+      </div>
+      <div class="flex flex-col gap-4">
+        <h5 class="text-[#002147] dark:text-white font-bold mb-2 font-headline">Get Started</h5>
+        <p class="text-slate-500 dark:text-slate-400 mb-2">Schedule a discovery call with our architectural leads.</p>
+        <a href="contact.html"
+          class="bg-primary-container text-white px-6 py-3 rounded-lg font-bold text-sm shadow-md hover:bg-secondary transition-colors text-center">
+          Get a Quote
+        </a>
+      </div>
+    </div>
+    <div
+      class="max-w-7xl mx-auto px-8 mt-20 pt-10 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center gap-6">
+      <div class="text-slate-500 dark:text-slate-400">© 2025 Korventis. All rights reserved.</div>
+      <div class="flex flex-wrap gap-8">
+        <a class="text-slate-500 dark:text-slate-400 hover:text-[#002147] dark:hover:text-white underline-offset-4 hover:underline"
+          href="privacy_policy.html">Privacy Policy</a>
+        <a class="text-slate-500 dark:text-slate-400 hover:text-[#002147] dark:hover:text-white underline-offset-4 hover:underline"
+          href="terms_of_service.html">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('mobile-menu-btn').addEventListener('click', function () {
+      const menu = document.getElementById('mobile-menu');
+      const icon = this.querySelector('.material-symbols-outlined');
+      menu.classList.toggle('hidden');
+      icon.textContent = menu.classList.contains('hidden') ? 'menu' : 'close';
+    });
+  </script>
+</body>
+
+</html>
