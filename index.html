@@ -15,6 +15,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
     rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
   <script id="tailwind-config">
     tailwind.config = {
       darkMode: "class",
@@ -79,15 +81,6 @@
       },
     }
   </script>
-  <style>
-    .material-symbols-outlined {
-      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-    }
-
-    .bg-action-gradient {
-      background: linear-gradient(135deg, #0054cd 0%, #316ee9 100%);
-    }
-  </style>
 </head>
 
 <body class="bg-background text-on-background font-body antialiased">
@@ -118,7 +111,7 @@
         <span class="material-symbols-outlined text-3xl">menu</span>
       </button>
       <a href="contact.html"
-        class="hidden md:inline-block bg-action-gradient text-white px-6 py-2.5 rounded-lg font-bold text-sm scale-95 active:opacity-80 transition-transform shadow-lg">
+        class="hidden md:inline-block bg-gradient-to-br from-secondary to-secondary-container text-on-primary px-6 py-2.5 rounded-lg font-bold text-sm scale-95 active:opacity-80 transition-transform shadow-lg">
         Get a Quote
       </a>
     </div>
@@ -159,7 +152,7 @@
         </p>
         <div class="flex flex-wrap gap-4">
           <a href="contact.html"
-            class="bg-action-gradient text-on-primary px-8 py-4 rounded-lg font-bold text-base shadow-xl hover:shadow-2xl transition-all active:scale-95">
+            class="bg-gradient-to-br from-secondary to-secondary-container text-on-primary px-8 py-4 rounded-lg font-bold text-base shadow-xl hover:shadow-2xl transition-all active:scale-95">
             Get a Quote
           </a>
           <a href="portfolio.html"
@@ -376,7 +369,7 @@
           <p class="text-on-primary-container text-lg md:text-xl mb-12 leading-relaxed opacity-80">Join the ranks of
             high-growth companies leveraging Korventis for unparalleled technological scale.</p>
           <a href="contact.html"
-            class="bg-action-gradient text-white px-10 py-5 rounded-lg font-bold text-lg shadow-2xl hover:scale-105 active:scale-95 transition-all">
+            class="bg-gradient-to-br from-secondary to-secondary-container text-on-primary px-10 py-5 rounded-lg font-bold text-lg shadow-2xl hover:scale-105 active:scale-95 transition-all">
             Get a Quote Today
           </a>
         </div>

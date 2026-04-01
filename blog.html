@@ -14,6 +14,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
         rel="stylesheet" />
+
+    <link rel="stylesheet" href="styles.css" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script id="tailwind-config">
         tailwind.config = {
@@ -79,19 +81,6 @@
             },
         }
     </script>
-    <style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-
-        .action-blue-gradient {
-            background: linear-gradient(135deg, #0054cd 0%, #316ee9 100%);
-        }
-
-        .glass-nav {
-            backdrop-filter: blur(20px);
-        }
-    </style>
 </head>
 
 <body class="bg-background text-on-surface font-body selection:bg-secondary/30">
@@ -121,7 +110,7 @@
                 <span class="material-symbols-outlined text-3xl">menu</span>
             </button>
             <a href="contact.html"
-                class="hidden md:inline-block action-blue-gradient text-on-primary px-6 py-2.5 rounded-lg font-bold text-sm scale-95 active:opacity-80 transition-transform shadow-lg">
+                class="hidden md:inline-block bg-gradient-to-br from-secondary to-secondary-container text-on-primary px-6 py-2.5 rounded-lg font-bold text-sm scale-95 active:opacity-80 transition-transform shadow-lg">
                 Get a Quote
             </a>
         </div>
